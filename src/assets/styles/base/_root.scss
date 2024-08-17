@@ -1,0 +1,66 @@
+@use 'node_modules/utopia-core-scss/src/utopia' as utopia;
+@use '../abstracts/_colors' as *;
+@use '../abstracts/_fonts' as *;
+@use '../abstracts/_space' as *;
+
+:root {
+  // COLORS
+  @each $color, $shades in $colors {
+    @each $shade, $value in $shades {
+      --clr-#{$color}-#{$shade}: #{$value};
+    }
+  }
+
+  // FONTS
+  @include utopia.generateTypeScale((
+          "minWidth": 480,
+          "maxWidth": 1024,
+          "minFontSize": 16,
+          "maxFontSize": 16,
+          "minTypeScale": 1.125,
+          "maxTypeScale": 1.2,
+          "positiveSteps": 7,
+          "negativeSteps": 2,
+          "prefix": "step-",
+          "relativeTo": "container"
+  ));
+
+  // FONT SIZES
+  --fs-2: var(--step--2);
+  --fs-3: var(--step--1);
+  --fs-4: var(--step-0);
+  --fs-5: var(--step-1);
+  --fs-6: var(--step-2);
+  --fs-7: var(--step-3);
+  --fs-8: var(--step-4);
+  --fs-9: var(--step-5);
+  --fs-10: var(--step-6);
+  --fs-11: var(--step-7);
+
+  // FONT FAMILIES
+  @each $font, $value in $font-families {
+    --ff-#{$font}: #{$value};
+  }
+
+  // FONT WEIGHTS
+  @each $weight, $value in $font-weights {
+    --fw-#{$weight}: #{$value};
+  }
+
+  // SPACING
+  @include utopia.generateSpaceScale((
+          "minWidth": 480,
+          "maxWidth": 1024,
+          "minSize": 16,
+          "maxSize": 16,
+          "positiveSteps": (1.5, 2, 3, 4, 6, 7, 8, 9),
+          "negativeSteps": (0.75, 0.5, 0.25),
+          "customSizes": ("s-l"),
+          "prefix": "space-",
+          "relativeTo": "container",
+  ));
+
+  @each $space, $value in $spaces {
+    --space-#{$space}: #{$value};
+  }
+}

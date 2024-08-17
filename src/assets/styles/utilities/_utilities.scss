@@ -1,0 +1,203 @@
+@use '../abstracts/_colors' as *;
+@use '../abstracts/_space' as *;
+@use '../abstracts/_fonts' as *;
+
+// COLORS UTILITY CLASSES
+@each $color, $values in $colors {
+ @each $value, $hex in $values {
+   .bg-#{$color}-#{$value} {
+     background-color: var(--clr-#{$color}-#{$value});
+   }
+   .text-#{$color}-#{$value} {
+     color: var(--clr-#{$color}-#{$value});
+   }
+   .border-#{$color}-#{$value} {
+     border: 1px solid;
+     border-color: var(--clr-#{$color}-#{$value});
+   }
+ }
+}
+
+// SPACE UTILITY CLASSES
+@each $space, $value in $spaces {
+  .m-#{$space} {
+    margin: var(--space-#{$space});
+  }
+  .mt-#{$space} {
+    margin-top: var(--space-#{$space});
+  }
+  .mr-#{$space} {
+    margin-right: var(--space-#{$space});
+  }
+  .mb-#{$space} {
+    margin-bottom: var(--space-#{$space});
+  }
+  .ml-#{$space} {
+    margin-left: var(--space-#{$space});
+  }
+  .mx-#{$space} {
+    margin-left: var(--space-#{$space});
+    margin-right: var(--space-#{$space});
+  }
+  .my-#{$space} {
+    margin-top: var(--space-#{$space});
+    margin-bottom: var(--space-#{$space});
+  }
+  .p-#{$space} {
+    padding: var(--space-#{$space});
+  }
+  .pt-#{$space} {
+    padding-top: var(--space-#{$space});
+  }
+  .pr-#{$space} {
+    padding-right: var(--space-#{$space});
+  }
+  .pb-#{$space} {
+    padding-bottom: var(--space-#{$space});
+  }
+  .pl-#{$space} {
+    padding-left: var(--space-#{$space});
+  }
+  .px-#{$space} {
+    padding-left: var(--space-#{$space});
+    padding-right: var(--space-#{$space});
+  }
+  .py-#{$space} {
+    padding-top: var(--space-#{$space});
+    padding-bottom: var(--space-#{$space});
+  }
+  .gap-#{$space} {
+    gap: var(--space-#{$space});
+  }
+}
+
+// FONT SIZE UTILITY CLASSES
+@each $size, $value in $font-sizes {
+  .fs-#{$size} {
+    font-size: var(--fs-#{$size});
+  }
+}
+
+// FONT FAMILY UTILITY CLASSES
+@each $family, $value in $font-families {
+  .ff-#{$family} {
+    font-family: var(--ff-#{$family});
+  }
+}
+
+// FONT WEIGHT UTILITY CLASSES
+@each $weight, $value in $font-weights {
+  .fw-#{$weight} {
+    font-weight: var(--fw-#{$weight});
+  }
+}
+
+// TEXT ALIGN UTILITY CLASSES
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.text-justify {
+  text-align: justify;
+}
+
+// LAYOUT UTILITY CLASSES
+.flex {
+  display: flex;
+}
+.grid {
+  display: grid;
+}
+.flex-column {
+  flex-direction: column;
+}
+.flex-row {
+  flex-direction: row;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.justify-content-start {
+  justify-content: flex-start;
+}
+.justify-content-end {
+  justify-content: flex-end;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.justify-content-between {
+  justify-content: space-between;
+}
+.justify-content-around {
+  justify-content: space-around;
+}
+.align-items-start {
+  align-items: flex-start;
+}
+.align-items-end {
+  align-items: flex-end;
+}
+.align-items-center {
+  align-items: center;
+}
+.align-items-baseline {
+  align-items: baseline;
+}
+.align-items-stretch {
+  align-items: stretch;
+}
+.align-content-start {
+  align-content: flex-start;
+}
+.align-content-end {
+  align-content: flex-end;
+}
+.align-content-center {
+  align-content: center;
+}
+.align-content-between {
+  align-content: space-between;
+}
+.align-content-around {
+  align-content: space-around;
+}
+.align-content-stretch {
+  align-content: stretch;
+}
+.align-self-auto {
+  align-self: auto;
+}
+.align-self-start {
+  align-self: flex-start;
+}
+.align-self-end {
+  align-self: flex-end;
+}
+.align-self-center {
+  align-self: center;
+}
+.align-self-baseline {
+  align-self: baseline;
+}
+.align-self-stretch {
+  align-self: stretch;
+}
+
+.even-columns {
+  display: grid;
+
+  @media only screen and (min-width: 45em) {
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
+}
+
+.flow > * + * {
+  margin-top: var(--_flow-space, .5em);
+}
