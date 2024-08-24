@@ -1,0 +1,48 @@
+body {
+    font-family: var(--ff-base), sans-serif;
+    font-size: var(--fs-4);
+    font-weight: var(--fw-light);
+    color: var(--clr-neutral-900);
+}
+
+h1,
+.h1 {
+    font-family: var(--ff-heading), sans-serif;
+    font-size: var(--fs-10);
+    font-weight: var(--fw-bold);
+}
+
+h2,
+.h2 {
+    font-family: var(--ff-heading), sans-serif;
+    font-size: var(--fs-9);
+    font-weight: var(--fw-bold);
+}
+
+h3,
+.h3 {
+    font-family: var(--ff-heading), sans-serif;
+    font-size: var(--fs-8);
+    font-weight: var(--fw-bold);
+}
+
+h4,
+.h4 {
+    font-family: var(--ff-heading), sans-serif;
+    font-size: var(--fs-7);
+    font-weight: var(--fw-bold);
+}
+
+h5,
+.h5 {
+    font-family: var(--ff-heading), sans-serif;
+    font-size: var(--fs-6);
+    font-weight: var(--fw-bold);
+}
+
+h6,
+.h6 {
+    font-family: var(--ff-heading), sans-serif;
+    font-size: var(--fs-5);
+    font-weight: var(--fw-bold);
+}

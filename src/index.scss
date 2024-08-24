@@ -1,0 +1,8 @@
+@use "assets/styles/base/root";
+@use "assets/styles/base/reset.css";
+@use "assets/styles/base/typography";
+@use "assets/styles/utilities/utilities";
+
+body {
+  background-color: var(--clr-neutral-100);
+}

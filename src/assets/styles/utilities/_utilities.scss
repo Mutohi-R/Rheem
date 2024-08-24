@@ -1,21 +1,21 @@
-@use '../abstracts/_colors' as *;
-@use '../abstracts/_space' as *;
-@use '../abstracts/_fonts' as *;
+@use "../abstracts/_colors" as *;
+@use "../abstracts/_space" as *;
+@use "../abstracts/_fonts" as *;
 
 // COLORS UTILITY CLASSES
 @each $color, $values in $colors {
- @each $value, $hex in $values {
-   .bg-#{$color}-#{$value} {
-     background-color: var(--clr-#{$color}-#{$value});
-   }
-   .text-#{$color}-#{$value} {
-     color: var(--clr-#{$color}-#{$value});
-   }
-   .border-#{$color}-#{$value} {
-     border: 1px solid;
-     border-color: var(--clr-#{$color}-#{$value});
-   }
- }
+  @each $value, $hex in $values {
+    .bg-#{$color}-#{$value} {
+      background-color: var(--clr-#{$color}-#{$value});
+    }
+    .text-#{$color}-#{$value} {
+      color: var(--clr-#{$color}-#{$value});
+    }
+    .border-#{$color}-#{$value} {
+      border: 1px solid;
+      border-color: var(--clr-#{$color}-#{$value});
+    }
+  }
 }
 
 // SPACE UTILITY CLASSES
@@ -106,7 +106,7 @@
   text-align: justify;
 }
 
-// LAYOUT UTILITY CLASSES
+// DISPLAY UTILITY CLASSES
 .flex {
   display: flex;
 }
@@ -189,6 +189,15 @@
   align-self: stretch;
 }
 
+// lAYOUT UTILITY CLASSES
+.full-width {
+  width: 100%;
+}
+
+.mx-auto {
+  margin-inline: auto;
+}
+
 .even-columns {
   display: grid;
 
@@ -199,5 +208,13 @@
 }
 
 .flow > * + * {
-  margin-top: var(--_flow-space, .5em);
+  margin-top: var(--_flow-space, 0.5em);
+}
+
+.wrapper {
+  --_max-width: 1440px;
+  --_padding: 1rem;
+
+  width: min(var(--_max-width), 100% - (var(--_padding) * 2));
+  margin-inline: auto;
 }

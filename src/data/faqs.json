@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "question": "What type of air conditioners do you offer?",
+    "answer": "We offer a wide range of air conditioners including Split ACs, Window ACs, and Cassette ACs"
+  },
+  {
+    "id": 2,
+    "question": "Do your products come with a warranty?",
+    "answer": "Yes, all our products come with a manufacturer's warranty. The duration of the warranty may vary depending on the brand and model."
+  },
+  {
+    "id": 3,
+    "question": "What is your return policy?",
+    "answer": "We offer a 30-day return policy on all our products. Items must be returned in their original condition with proof of purchase."
+  },
+  {
+    "id": 4,
+    "question": "What payment methods do you accept?",
+    "answer": "We accept various payment methods including credit/debit cards, PayPal, and net banking."
+  },
+  {
+    "id": 5,
+    "question": "Are there any financing options available?",
+    "answer": "Yes, we offer flexible financing options to help you purchase your desired air conditioner. Please contact our support team for more details."
+  },
+  {
+    "id": 6,
+    "question": "How can I contact customer support?",
+    "answer": "You can contact our customer support team via email at support@rheemcooling.com or call us at 1-800-123-4567."
+  }
+]

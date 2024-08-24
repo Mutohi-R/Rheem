@@ -1,0 +1,59 @@
+.categories-card-section {
+  display: grid;
+  gap: var(--space-3);
+  grid-template-areas: "split" "cassette" "window";
+}
+.categories-card-section .split {
+  grid-area: split;
+}
+.categories-card-section .cassette {
+  grid-area: cassette;
+}
+.categories-card-section .window {
+  grid-area: window;
+}
+.categories-card-section .categories-card {
+  position: relative;
+  display: grid;
+  align-items: center;
+  gap: var(--space-7);
+  padding: 1.25rem;
+  height: 100%;
+  background-color: var(--clr-neutral-0);
+  border: 1px solid var(--clr-neutral-200);
+  border-radius: 1.25rem;
+}
+.categories-card-section .categories-card .card-image {
+  margin-inline: auto;
+}
+.categories-card-section .categories-card .label {
+  color: var(--clr-neutral-500);
+  font-size: 0.875rem;
+}
+.categories-card-section .card-content .cta button {
+  width: 100%;
+}
+@media only screen and (min-width: 950px) {
+  .categories-card-section {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "split split window" "cassette cassette window";
+  }
+}
+
+.categories-card-container {
+  container-type: inline-size;
+}
+
+@container (width < 600px) {
+  .categories-card {
+    grid-auto-flow: row;
+  }
+}
+@container (width > 600px) {
+  .categories-card {
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
+}
+
+/*# sourceMappingURL=categories.css.map */

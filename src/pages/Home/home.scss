@@ -1,0 +1,143 @@
+.hero {
+  padding-block-start: 2rem;
+  .top {
+    position: relative;
+    display: grid;
+    //grid-template-areas:
+    //        'hero-heading'
+    //        'hero-image'
+    //        'hero-text';
+    gap: var(--space-4);
+
+    h1 {
+      //grid-area: hero-heading;
+    }
+
+    .hero-image {
+      //grid-area: hero-image;
+      max-height: 572px;
+      overflow: hidden;
+      border-radius: 1.25rem;
+    }
+
+    .cta {
+      //grid-area: hero-text;
+      display: grid;
+      gap: var(--space-2);
+    }
+
+    @media only screen and (width > 45em) {
+      //grid-template-areas:
+      //        'hero-image hero-image hero-image'
+      //        'hero-heading hero-heading hero-heading'
+      //        'hero-text hero-text hero-text';
+      //grid-template-columns: 1fr 1fr;
+
+      h1 {
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+        max-width: 20ch;
+        padding: 0;
+      }
+
+      .cta {
+        position: absolute;
+        bottom: 2rem;
+        right: 2rem;
+        display: grid;
+        gap: var(--space-2);
+        justify-items: end;
+
+        .text {
+          padding: 1.5rem 2rem;
+          max-width: 40ch;
+          background-color: hsl(0, 0, 100, 0.5);
+          backdrop-filter: blur(.2rem);
+          border-radius: 1.25rem;
+        };
+      }
+    }
+  }
+
+  .bottom {
+    display: grid;
+    gap: var(--space-4);
+    div:first-child {
+        display: grid;
+        gap: var(--space-2);
+    }
+
+    @media only screen and (width > 45em) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      div:first-child {
+        justify-items: start;
+
+        p {
+            max-width: 70ch;
+        }
+      }
+    }
+  }
+}
+
+.bestsellers {
+  padding-block-start: 8.75rem;
+
+  .block {
+    min-width: 0;
+  }
+}
+
+.categories {
+    padding-block-start: 8.75rem;
+}
+
+.gallery {
+    padding-block-start: 8.75rem;
+}
+
+.testimonials {
+    padding-block-start: 8.75rem;
+}
+
+.about-us {
+  padding-block-start: 8.75rem;
+
+  .about-us-container {
+    display: grid;
+    gap: var(--space-4);
+
+    .about-us-image {
+      overflow: hidden;
+      border-radius: 1.25rem;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .about-us-content {
+      max-width: 56ch;
+    }
+
+    @media only screen and (width > 1000px) {
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-6-7);
+      align-items: center;
+    }
+  }
+}
+
+.faq {
+  padding-block-start: 8.75rem;
+}
+
+.contact {
+  padding-block-start: 8.75rem;
+}

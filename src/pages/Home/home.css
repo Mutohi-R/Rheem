@@ -1,0 +1,118 @@
+.hero {
+  padding-block-start: 2rem;
+}
+.hero .top {
+  position: relative;
+  display: grid;
+  gap: var(--space-4);
+}
+.hero .top .hero-image {
+  max-height: 572px;
+  overflow: hidden;
+  border-radius: 1.25rem;
+}
+.hero .top .cta {
+  display: grid;
+  gap: var(--space-2);
+}
+@media only screen and (width > 45em) {
+  .hero .top h1 {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    max-width: 20ch;
+    padding: 0;
+  }
+  .hero .top .cta {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    display: grid;
+    gap: var(--space-2);
+    justify-items: end;
+  }
+  .hero .top .cta .text {
+    padding: 1.5rem 2rem;
+    max-width: 40ch;
+    background-color: hsla(0, 0%, 100%, 0.5);
+    backdrop-filter: blur(0.2rem);
+    border-radius: 1.25rem;
+  }
+}
+.hero .bottom {
+  display: grid;
+  gap: var(--space-4);
+}
+.hero .bottom div:first-child {
+  display: grid;
+  gap: var(--space-2);
+}
+@media only screen and (width > 45em) {
+  .hero .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .hero .bottom div:first-child {
+    justify-items: start;
+  }
+  .hero .bottom div:first-child p {
+    max-width: 70ch;
+  }
+}
+
+.bestsellers {
+  padding-block-start: 8.75rem;
+}
+.bestsellers .block {
+  min-width: 0;
+}
+
+.categories {
+  padding-block-start: 8.75rem;
+}
+
+.gallery {
+  padding-block-start: 8.75rem;
+}
+
+.testimonials {
+  padding-block-start: 8.75rem;
+}
+
+.about-us {
+  padding-block-start: 8.75rem;
+}
+.about-us .about-us-container {
+  display: grid;
+  gap: var(--space-4);
+}
+.about-us .about-us-container .about-us-image {
+  overflow: hidden;
+  border-radius: 1.25rem;
+}
+.about-us .about-us-container .about-us-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.about-us .about-us-container .about-us-content {
+  max-width: 56ch;
+}
+@media only screen and (width > 1000px) {
+  .about-us .about-us-container {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-6-7);
+    align-items: center;
+  }
+}
+
+.faq {
+  padding-block-start: 8.75rem;
+}
+
+.contact {
+  padding-block-start: 8.75rem;
+}
+
+/*# sourceMappingURL=home.css.map */

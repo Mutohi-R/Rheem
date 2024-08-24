@@ -1,0 +1,41 @@
+.contact-container {
+  display: grid;
+  gap: var(--space-6);
+}
+.contact-container .contact-form {
+  display: grid;
+  gap: var(--space-3);
+}
+.contact-container .contact-form .form-group {
+  display: grid;
+  gap: var(--space-2);
+}
+.contact-container .contact-form .form-label {
+  color: var(--clr-neutral-600);
+  font-size: 0.875rem;
+}
+.contact-container .contact-form input[type=text], .contact-container .contact-form input[type=email], .contact-container .contact-form textarea {
+  padding: 0.5rem 1rem;
+  width: 100%;
+  border: 1px solid var(--clr-neutral-500);
+  border-radius: 1.25rem;
+}
+.contact-container .contact-form input[type=text]:focus, .contact-container .contact-form input[type=text]:hover, .contact-container .contact-form input[type=email]:focus, .contact-container .contact-form input[type=email]:hover, .contact-container .contact-form textarea:focus, .contact-container .contact-form textarea:hover {
+  outline: none;
+  border-color: var(--clr-neutral-700);
+}
+.contact-container .contact-info {
+  display: grid;
+  gap: var(--space-4);
+}
+@media only screen and (width > 900px) {
+  .contact-container {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-11);
+  }
+  .contact-container input[type=text], .contact-container input[type=email], .contact-container textarea {
+    max-width: 600px;
+  }
+}
+
+/*# sourceMappingURL=contact.css.map */

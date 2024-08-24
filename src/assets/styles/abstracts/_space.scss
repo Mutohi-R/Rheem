@@ -1,5 +1,5 @@
-@use 'node_modules/utopia-core-scss/src/utopia' as utopia;
-
+//@use 'node_modules/utopia-core-scss/src/utopia' as utopia;
+@use '../../../../node_modules/utopia-core-scss/src/utopia' as utopia;
 $spaces: (
         0: var(--space-3xs),
         1: var(--space-2xs),

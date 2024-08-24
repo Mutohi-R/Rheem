@@ -1,4 +1,5 @@
-@use 'node_modules/utopia-core-scss/src/utopia' as utopia;
+//@use 'node_modules/utopia-core-scss/src/utopia' as utopia;
+@use '../../../../node_modules/utopia-core-scss/src/utopia' as utopia;
 @use '../abstracts/_colors' as *;
 @use '../abstracts/_fonts' as *;
 @use '../abstracts/_space' as *;

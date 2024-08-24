@@ -1,0 +1,30 @@
+button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-0);
+  padding: 0.5rem 1.5rem;
+  color: var(--clr-neutral-0);
+  border: none;
+  border-radius: 1.25rem;
+}
+
+button.primary {
+  background-color: var(--clr-primary-200);
+  .caret-icon path {
+    fill: var(--clr-neutral-0);
+  }
+}
+
+button.secondary {
+  background-color: var(--clr-secondary-200);
+  .caret-icon path {
+    fill: var(--clr-neutral-0);
+  }
+}
+
+button.outlined {
+  color: var(--clr-primary-300);
+    background-color: transparent;
+    border: 1px solid var(--clr-primary-400);
+}

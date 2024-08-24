@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "author": "Alex Johnson",
+    "comment": "\"Rheem Cooling exceeded my expectations! The AC unit is powerful and energy-efficient, making my home comfortable all summer long.\"",
+    "rating": 5
+  },
+  {
+    "id": 2,
+    "author": "Maria Garcia",
+    "comment": "\"Great variety of air conditioners to choose from. The staff was very knowledgeable and helped me pick the perfect model for my needs.\"",
+    "rating": 4
+  },
+  {
+    "id": 3,
+    "author": "Samantha Brown",
+    "comment": "\"I appreciate the energy-saving features of my new AC unit. It keeps my house cool without driving up my electricity bill.\"",
+    "rating": 4
+  }
+]

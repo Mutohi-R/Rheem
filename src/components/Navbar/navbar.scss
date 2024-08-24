@@ -1,0 +1,49 @@
+.primary-navigation {
+  ul {
+    .nav-link {
+      color: var(--clr-neutral-600);
+      text-decoration: none;
+
+      &:hover {
+        color: var(--clr-neutral-900);
+      }
+    }
+  }
+
+  @media only screen and (max-width: 65em) {
+    display: none;
+  }
+}
+
+.utilities {
+  .search {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    input {
+      padding-inline: 3rem 1rem;
+      padding-block: 0.25rem;
+      border: 1px solid var(--clr-neutral-700);
+      max-width: 10rem;
+      border-radius: 1.25rem;
+      background-color: transparent;
+
+      &:focus {
+        outline: none;
+        border-color: var(--clr-primary-900);
+      }
+
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 1rem;
+      pointer-events: none;
+    }
+  }
+
+  @media only screen and (max-width: 65em) {
+    display: none;
+  }
+}
