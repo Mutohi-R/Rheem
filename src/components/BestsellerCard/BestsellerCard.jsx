@@ -1,5 +1,5 @@
 import Button from "../ui/Button/Button.jsx";
-import './bestseller-card.scss';
+import './bestsellercard.scss';
 
 const BestsellerCard = ({id, inStock, image, name, type}) => {
     return (

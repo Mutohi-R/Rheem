@@ -1,6 +1,18 @@
 .primary-footer {
   padding-block: 8.75rem 2rem;
 
+  .quick-links {
+    grid-area: quick-links;
+  }
+
+  .additional {
+    grid-area: additional;
+  }
+
+  .follow {
+    grid-area: follow;
+  }
+
   .footer-container {
     display: grid;
     gap: var(--space-6);
@@ -20,7 +32,7 @@
       input {
         padding: 0.5rem 1rem;
         width: 100%;
-        max-width: 400px;
+        // max-width: 400px;
         border: 1px solid var(--clr-neutral-500);
         border-radius: 1.25rem;
       }
@@ -30,13 +42,44 @@
         font-size: 0.875rem;
         color: var(--clr-neutral-600);
       }
+
+      .subscribe-form {
+        @media only screen and (width < 510px) {
+          display: grid;
+        }
+      }
+
+      @media only screen and (width > 900px) {
+        input {
+          max-width: 400px;
+        }
+      }
     }
 
     .footer-section-two {
       grid-area: footer-section-two;
       display: grid;
-      grid-auto-flow: column;
+      grid-template-areas: 
+              'quick-links'
+              'additional'
+              'follow';
       gap: var(--space-3);
+
+      @media only screen and (width > 450px) {
+        grid-template-areas: 
+              'quick-links additional'
+              'follow additional';
+      }
+
+      @media only screen and (width > 500px) {
+        grid-template-areas: 
+              'quick-links additional follow';
+        gap: var(--space-4);
+      }
+
+      @media only screen and (width > 900px) {
+        justify-items: end;
+      }
     }
 
     .footer-section-three {
@@ -51,6 +94,12 @@
       font-size: 0.875rem;
       color: var(--clr-neutral-500);
       text-decoration: underline;
+
+      @media only screen and (width > 900px) {
+        display: flex;
+        justify-content: end;
+        gap: var(--space-3);
+      }
     }
 
     @media only screen and (width > 900px) {
@@ -59,24 +108,6 @@
               'footer-section-three footer-section-four';
       row-gap: var(--space-7-8);
       column-gap: var(--space-8);
-
-      .footer-section-two {
-        display: grid;
-        grid-auto-flow: column;
-        grid-auto-columns: 1fr;
-        justify-items: end;
-        gap: var(--space-4);
-      }
-
-      .footer-section-three {
-
-      }
-
-      .footer-section-four {
-        display: flex;
-        justify-content: end;
-        gap: var(--space-3);
-      }
     }
   }
 }

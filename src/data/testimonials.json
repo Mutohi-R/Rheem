@@ -16,5 +16,41 @@
     "author": "Samantha Brown",
     "comment": "\"I appreciate the energy-saving features of my new AC unit. It keeps my house cool without driving up my electricity bill.\"",
     "rating": 4
+  },
+  {
+    "id": 4,
+    "author": "John Smith",
+    "comment": "\"The installation process was quick and easy. The technician was professional and answered all my questions.\"",
+    "rating": 5
+  },
+  {
+    "id": 5,
+    "author": "Emily Davis",
+    "comment": "\"I love the sleek design of my new air conditioner. It fits perfectly in my living room and keeps the space cool and comfortable.\"",
+    "rating": 5
+  },
+  {
+    "id": 6,
+    "author": "Michael Wilson",
+    "comment": "\"Rheem Cooling has excellent customer service. They were responsive to my inquiries and provided helpful information about their products.\"",
+    "rating": 4
+  },
+  {
+    "id": 7,
+    "author": "Jessica Martinez",
+    "comment": "\"I am impressed with the performance of my new air conditioner. It cools my home quickly and efficiently, even on the hottest days.\"",
+    "rating": 5
+  },
+  {
+    "id": 8,
+    "author": "David Thompson",
+    "comment": "\"The Rheem Cooling team was professional and courteous throughout the entire process. I am very satisfied with my purchase.\"",
+    "rating": 4
+  },
+  {
+    "id": 9,
+    "author": "Sarah White",
+    "comment": "\"I highly recommend Rheem Cooling for all your air conditioning needs. Their products are top-notch and their customer service is exceptional.\"",
+    "rating": 5
   }
 ]

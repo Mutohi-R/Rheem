@@ -35,6 +35,7 @@
     padding: 1.5rem 2rem;
     max-width: 40ch;
     background-color: hsla(0, 0%, 100%, 0.5);
+    -webkit-backdrop-filter: blur(0.2rem);
     backdrop-filter: blur(0.2rem);
     border-radius: 1.25rem;
   }
@@ -67,6 +68,22 @@
 .bestsellers .block {
   min-width: 0;
 }
+.bestsellers .mobile-bestsellers-button button {
+  width: 100%;
+}
+@media only screen and (width > 420px) {
+  .bestsellers .mobile-bestsellers-button {
+    display: none;
+  }
+}
+.bestsellers .desktop-bestsellers-button {
+  display: none;
+}
+@media only screen and (width > 420px) {
+  .bestsellers .desktop-bestsellers-button {
+    display: block;
+  }
+}
 
 .categories {
   padding-block-start: 8.75rem;
@@ -78,6 +95,9 @@
 
 .testimonials {
   padding-block-start: 8.75rem;
+}
+.testimonials .block {
+  min-width: 0;
 }
 
 .about-us {

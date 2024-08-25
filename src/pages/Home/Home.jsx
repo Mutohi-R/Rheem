@@ -64,15 +64,20 @@ const Home = () => {
                 <section className="bestsellers">
                     <div className="wrapper">
                         <div className="grid gap-4">
-                            <div className="block flex align-items-center justify-content-between">
+                            <div className="block flex flex-wrap align-items-center justify-content-between">
                                 <div className="flex align-items-center gap-3">
                                     <Bullet/>
                                     <h2>Our Bestsellers</h2>
                                 </div>
-                                <Button type={"primary"} icon={true} label={"View All"}></Button>
+                                <div className='desktop-bestsellers-button'>
+                                    <Button type={"primary"} icon={true} label={"View All"}></Button>
+                                </div>
                             </div>
                             <div className="block">
                                 <BestsellerSlider/>
+                            </div>
+                            <div className='mobile-bestsellers-button'>
+                                <Button type={"primary"} icon={true} label={"View All"}></Button>
                             </div>
                         </div>
                     </div>
@@ -109,12 +114,14 @@ const Home = () => {
 
                 <section className="testimonials">
                     <div className="wrapper">
-                        <div className="grid gap-4">
-                            <div className="flex align-items-center gap-3">
+                        <div className="testimonials-container | grid gap-4">
+                            <div className="block flex align-items-center gap-3">
                                 <Bullet/>
                                 <h2 className="text-center">What Our Customers Say</h2>
                             </div>
-                            <Testimonials/>
+                            <div className="block">
+                                <Testimonials/>
+                            </div>
                         </div>
                     </div>
                 </section>

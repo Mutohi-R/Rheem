@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import SearchIcon from "../icons/SearchIcon.jsx";
 import UserIcon from "../icons/UserIcon.jsx";
 import CartIcon from "../icons/CartIcon.jsx";
@@ -17,10 +19,10 @@ const Navbar = () => {
                     <nav className="primary-navigation">
                         <ul className="flex align-items-center gap-6" role={"list"}>
                             <li>
-                                <a className="nav-link" href="#">Home</a>
+                                <Link to="/" className="nav-link">Home</Link>
                             </li>
                             <li>
-                                <a className="nav-link" href="#">Shop</a>
+                                <Link to="/shop" className="nav-link">Shop</Link>
                             </li>
                             <li>
                                 <a className="nav-link" href="#">Services</a>

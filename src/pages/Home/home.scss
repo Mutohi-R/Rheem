@@ -9,10 +9,6 @@
     //        'hero-text';
     gap: var(--space-4);
 
-    h1 {
-      //grid-area: hero-heading;
-    }
-
     .hero-image {
       //grid-area: hero-image;
       max-height: 572px;
@@ -53,6 +49,7 @@
           padding: 1.5rem 2rem;
           max-width: 40ch;
           background-color: hsl(0, 0, 100, 0.5);
+          -webkit-backdrop-filter: blur(.2rem);
           backdrop-filter: blur(.2rem);
           border-radius: 1.25rem;
         };
@@ -90,6 +87,24 @@
   .block {
     min-width: 0;
   }
+
+  .mobile-bestsellers-button {
+    button {
+      width: 100%;
+    }
+
+    @media only screen and (width > 420px) {
+      display: none;
+    }
+  }
+
+  .desktop-bestsellers-button {
+    display: none;
+
+    @media only screen and (width > 420px) {
+      display: block;
+    }
+  }
 }
 
 .categories {
@@ -102,6 +117,10 @@
 
 .testimonials {
     padding-block-start: 8.75rem;
+
+    .block {
+      min-width: 0;
+    }
 }
 
 .about-us {

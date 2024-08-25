@@ -65,6 +65,17 @@
     }
   }
 
+  @media only screen and (width > 600px) {
+    grid-template-areas: 
+        'img-one img-one'
+        'img-two img-three'
+        'img-four img-three'
+        'img-five img-seven'
+        'img-six img-six'
+        'img-eight img-nine'
+        'img-eight img-ten';
+  }
+
   @media only screen and (width > 900px) {
     grid-template-areas:
         'img-one img-one img-one img-one img-two img-two img-two img-two img-three img-three img-three img-three'

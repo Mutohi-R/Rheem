@@ -10,7 +10,7 @@ const Footer = () => {
                     <div className="footer-section-one | flow">
                         <Logo />
                         <p>Join our newsletter to stay up to date </p>
-                        <div className="flex gap-2">
+                        <div className="subscribe-form | flex gap-2">
                             <input type="text" id="subscribe" name="subscribe" placeholder="Enter your email"/>
                             <Button type={"primary"} icon={true} label={"Subscribe"} />
                         </div>
@@ -18,7 +18,7 @@ const Footer = () => {
                     </div>
 
                     <div className="footer-section-two">
-                        <div className="flow">
+                        <div className="quick-links | flow">
                             <h6>Quick links</h6>
                             <div className="grid gap-0">
                                 <p>Home</p>
@@ -30,7 +30,7 @@ const Footer = () => {
                                 <p>Top selling ACs</p>
                             </div>
                         </div>
-                        <div className="flow">
+                        <div className="additional | flow">
                             <h6>Additional</h6>
                             <div  className="grid gap-0">
                                 <p>Store Locator</p>
@@ -38,7 +38,7 @@ const Footer = () => {
                                 <p>Sitemap</p>
                             </div>
                         </div>
-                        <div className="flow">
+                        <div className="follow | flow">
                             <h6>Follow us</h6>
                             <div className="grid gap-0">
                                 <p>Facebook</p>

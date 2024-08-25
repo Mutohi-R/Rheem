@@ -1,6 +1,15 @@
 .primary-footer {
   padding-block: 8.75rem 2rem;
 }
+.primary-footer .quick-links {
+  grid-area: quick-links;
+}
+.primary-footer .additional {
+  grid-area: additional;
+}
+.primary-footer .follow {
+  grid-area: follow;
+}
 .primary-footer .footer-container {
   display: grid;
   gap: var(--space-6);
@@ -16,7 +25,6 @@
 .primary-footer .footer-container .footer-section-one input {
   padding: 0.5rem 1rem;
   width: 100%;
-  max-width: 400px;
   border: 1px solid var(--clr-neutral-500);
   border-radius: 1.25rem;
 }
@@ -25,11 +33,37 @@
   font-size: 0.875rem;
   color: var(--clr-neutral-600);
 }
+@media only screen and (width < 510px) {
+  .primary-footer .footer-container .footer-section-one .subscribe-form {
+    display: grid;
+  }
+}
+@media only screen and (width > 900px) {
+  .primary-footer .footer-container .footer-section-one input {
+    max-width: 400px;
+  }
+}
 .primary-footer .footer-container .footer-section-two {
   grid-area: footer-section-two;
   display: grid;
-  grid-auto-flow: column;
+  grid-template-areas: "quick-links" "additional" "follow";
   gap: var(--space-3);
+}
+@media only screen and (width > 450px) {
+  .primary-footer .footer-container .footer-section-two {
+    grid-template-areas: "quick-links additional" "follow additional";
+  }
+}
+@media only screen and (width > 500px) {
+  .primary-footer .footer-container .footer-section-two {
+    grid-template-areas: "quick-links additional follow";
+    gap: var(--space-4);
+  }
+}
+@media only screen and (width > 900px) {
+  .primary-footer .footer-container .footer-section-two {
+    justify-items: end;
+  }
 }
 .primary-footer .footer-container .footer-section-three {
   grid-area: footer-section-three;
@@ -44,22 +78,17 @@
   text-decoration: underline;
 }
 @media only screen and (width > 900px) {
-  .primary-footer .footer-container {
-    grid-template-areas: "footer-section-one footer-section-two" "footer-section-three footer-section-four";
-    row-gap: var(--space-7-8);
-    column-gap: var(--space-8);
-  }
-  .primary-footer .footer-container .footer-section-two {
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: 1fr;
-    justify-items: end;
-    gap: var(--space-4);
-  }
   .primary-footer .footer-container .footer-section-four {
     display: flex;
     justify-content: end;
     gap: var(--space-3);
+  }
+}
+@media only screen and (width > 900px) {
+  .primary-footer .footer-container {
+    grid-template-areas: "footer-section-one footer-section-two" "footer-section-three footer-section-four";
+    row-gap: var(--space-7-8);
+    column-gap: var(--space-8);
   }
 }
 
