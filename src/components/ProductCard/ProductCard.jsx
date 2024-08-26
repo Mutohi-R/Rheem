@@ -1,27 +1,35 @@
+import PropTypes from 'prop-types';
 import './productcard.scss'
 import StarIcon from "../icons/StarIcon.jsx";
 
-const ProductCard = () => {
+const ProductCard = ({ id, name, price, image, rating }) => {
     return (
         <div className="product-card | grid gap-1">
             <div className="product-image">
-                <img src="src/assets/10,000%20BTU%20DUAL%20Inverter%20ENERGY%20STAR%20Window%20Air%20Conditioner/10,000%20BTU%20DUAL%20Inverter%20ENERGY%20STAR%20Window%20Air%20Conditioner%20-%201.png" alt=""/>
+                <img src={image} alt={name}/>
             </div>
             <div className="product-details | grid gap-1">
-                <div className='flex gap-4'>
-                    <p className='product-name'>10,000 BTU DUAL Inverter ENERGY STAR Window Air Conditioner</p>
-                    <p className="h6">$499.99</p>
+                <div className='flex gap-4 justify-content-between'>
+                    <p className='product-name'>{name}</p>
+                    <p className="h6">${price}</p>
                 </div>
                 <div className="product-rating">
-                    <StarIcon/>
-                    <StarIcon/>
-                    <StarIcon/>
-                    <StarIcon/>
-                    <StarIcon/>
+                    {[...Array(5)].map((_, index) => (
+                        <StarIcon key={index} fill={index < rating ? "filled" : "none"} color={"#FB8684"}/>
+                    ))}
                 </div>
             </div>
         </div>
     );
+};
+
+// Prop validation
+ProductCard.propTypes = {
+    id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+    name: PropTypes.string.isRequired,
+    price: PropTypes.number.isRequired,
+    image: PropTypes.string.isRequired,
+    rating: PropTypes.number.isRequired,
 };
 
 export default ProductCard;

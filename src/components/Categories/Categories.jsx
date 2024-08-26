@@ -1,5 +1,4 @@
 import StarIcon from "../icons/StarIcon.jsx";
-import CaretIcon from "../icons/CaretIcon.jsx";
 import './categories.scss'
 import Button from "../ui/Button/Button.jsx";
 
@@ -23,11 +22,11 @@ const Categories = () => {
                         <div className="grid gap-0">
                             <p className="label">Rating</p>
                             <div className="flex align-items-center gap-0">
-                                <StarIcon/>
-                                <StarIcon/>
-                                <StarIcon/>
-                                <StarIcon/>
-                                <StarIcon/>
+                                <StarIcon fill={"filled"} color={"#FB8684"}/>
+                                <StarIcon fill={"filled"} color={"#FB8684"}/>
+                                <StarIcon fill={"filled"} color={"#FB8684"}/>
+                                <StarIcon fill={"filled"} color={"#FB8684"}/>
+                                <StarIcon fill={"filled"} color={"#FB8684"}/>
                             </div>
                         </div>
 
@@ -58,11 +57,11 @@ const Categories = () => {
                         <div className="grid gap-0">
                             <p className="label">Rating</p>
                             <div className="flex align-items-center gap-0">
-                                <StarIcon/>
-                                <StarIcon/>
-                                <StarIcon/>
-                                <StarIcon/>
-                                <StarIcon/>
+                                <StarIcon fill={"filled"} color={"#FB8684"}/>
+                                <StarIcon fill={"filled"} color={"#FB8684"}/>
+                                <StarIcon fill={"filled"} color={"#FB8684"}/>
+                                <StarIcon fill={"filled"} color={"#FB8684"}/>
+                                <StarIcon fill={"empty"} color={"#FB8684"}/>
                             </div>
                         </div>
 
@@ -95,11 +94,11 @@ const Categories = () => {
                         <div className="grid gap-0">
                             <p className="label">Rating</p>
                             <div className="flex align-items-center gap-0">
-                                <StarIcon/>
-                                <StarIcon/>
-                                <StarIcon/>
-                                <StarIcon/>
-                                <StarIcon/>
+                                <StarIcon fill={"filled"} color={"#FB8684"}/>
+                                <StarIcon fill={"filled"} color={"#FB8684"}/>
+                                <StarIcon fill={"filled"} color={"#FB8684"}/>
+                                <StarIcon fill={"filled"} color={"#FB8684"}/>
+                                <StarIcon fill={"filled"} color={"#FB8684"}/>
                             </div>
                         </div>
 
