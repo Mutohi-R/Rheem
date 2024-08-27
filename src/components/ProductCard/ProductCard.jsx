@@ -2,9 +2,9 @@ import PropTypes from 'prop-types';
 import './productcard.scss'
 import StarIcon from "../icons/StarIcon.jsx";
 
-const ProductCard = ({ id, name, price, image, rating }) => {
+const ProductCard = ({ name, price, image, rating, onClick }) => {
     return (
-        <div className="product-card | grid gap-1">
+        <div onClick={onClick} className="product-card | grid gap-1">
             <div className="product-image">
                 <img src={image} alt={name}/>
             </div>
@@ -30,6 +30,7 @@ ProductCard.propTypes = {
     price: PropTypes.number.isRequired,
     image: PropTypes.string.isRequired,
     rating: PropTypes.number.isRequired,
+    onClick: PropTypes.func.isRequired
 };
 
 export default ProductCard;
