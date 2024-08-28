@@ -15,13 +15,13 @@ const BestsellerCard = ({id, inStock, image, name, type}) => {
             <div className="image">
                 <img src={image} alt=""/>
             </div>
-            <div className="flex">
+            <div className="flex align-items-center">
                 <div className="tag">
                     <p>{name}</p>
                 </div>
-                <div className="tag">
+                {/* <div className="tag">
                     <p>{type}</p>
-                </div>
+                </div> */}
             </div>
         </div>
     );

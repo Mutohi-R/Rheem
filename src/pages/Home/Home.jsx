@@ -5,6 +5,7 @@ import Button from "../../components/ui/Button/Button.jsx";
 import Bullet from "../../components/icons/Bullet.jsx";
 import Categories from "../../components/Categories/Categories.jsx";
 import Gallery from "../../components/Gallery/Gallery.jsx";
+import FaqAccordion from '../../components/Faq/FaqAccordion.jsx';
 import Testimonials from "../../components/Testimonials/Testimonials.jsx";
 import Contact from "../../components/Contact/Contact.jsx";
 import Footer from "../../components/Footer/Footer.jsx";
@@ -147,9 +148,12 @@ const Home = () => {
 
                 <section className="faq">
                     <div className="wrapper">
-                        <div className="flex align-items-center gap-3">
-                            <Bullet/>
-                            <h2>FAQs</h2>
+                        <div className="grid gap-4">
+                            <div className="flex align-items-center gap-3">
+                                <Bullet/>
+                                <h2>FAQs</h2>
+                            </div>
+                            <FaqAccordion />
                         </div>
                     </div>
                 </section>

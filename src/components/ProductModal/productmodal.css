@@ -1,0 +1,91 @@
+.product-modal {
+  width: min(1200px, 90%);
+  margin-block: auto;
+  margin-inline: auto;
+  border: none;
+  border-radius: 1.25rem;
+}
+.product-modal::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+.product-modal::-webkit-scrollbar-thumb {
+  background-color: var(--clr-neutral-300);
+  border-radius: 5px;
+}
+.product-modal::backdrop {
+  background: hsla(95, 17%, 48%, 0.5);
+  backdrop-filter: blur(0.25rem);
+  -webkit-backdrop-filter: blur(0.25rem);
+}
+.product-modal .product-modal-container {
+  display: grid;
+  gap: var(--space-6);
+  padding: 1rem;
+  background-color: var(--clr-neutral-0);
+  border: 1px solid var(--clr-neutral-200);
+  border-radius: 1.25rem;
+}
+.product-modal .product-modal-container .product-modal-image .main-image {
+  display: flex;
+  place-content: center;
+  height: 100%;
+  background-color: var(--clr-neutral-100);
+  border-radius: 1.25rem;
+}
+.product-modal .product-modal-container .product-modal-image .main-image img {
+  object-fit: contain;
+}
+.product-modal .product-modal-container .product-modal-content {
+  display: grid;
+  gap: var(--space-3);
+}
+.product-modal .product-modal-container .product-modal-content .product-modal-label {
+  font-size: 0.875rem;
+  color: var(--clr-neutral-600);
+}
+.product-modal .product-modal-container .product-modal-content .quantity-modifier {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: 0.25rem 0.75rem;
+  background-color: var(--clr-neutral-200);
+  border-radius: 1.25rem;
+}
+.product-modal .product-modal-container .product-modal-content .quantity-modifier .plus-icon path {
+  stroke: var(--clr-neutral-600);
+}
+.product-modal .product-modal-container .product-modal-content .quantity-modifier .minus-icon path {
+  stroke: var(--clr-neutral-600);
+}
+.product-modal .product-modal-container .product-modal-content .reviews-label {
+  font-size: 0.875rem;
+  color: var(--clr-neutral-600);
+  text-decoration: underline;
+}
+.product-modal .product-modal-container .product-modal-content .product-modal-description-group {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  align-items: start;
+  gap: var(--space-3);
+}
+.product-modal .product-modal-container .product-modal-content .product-modal-features {
+  font-size: 0.875rem;
+}
+@media only screen and (width > 700px) {
+  .product-modal .product-modal-container {
+    grid-template-columns: 0.8fr 1fr;
+  }
+}
+.product-modal .product-modal-container .close-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.3rem;
+  background-color: var(--clr-neutral-100);
+  border-radius: 100vw;
+  cursor: pointer;
+  transform: scale(1.5);
+}
+
+/*# sourceMappingURL=productmodal.css.map */

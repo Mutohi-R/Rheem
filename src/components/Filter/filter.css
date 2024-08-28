@@ -1,0 +1,137 @@
+.shop-filter .result-count {
+  color: var(--clr-neutral-600);
+  font-size: 0.875rem;
+  text-align: end;
+}
+.shop-filter .filter-bar {
+  display: grid;
+  grid-auto-flow: column;
+  gap: var(--space-2);
+}
+.shop-filter .filter-bar .filter-button {
+  display: flex;
+  padding: 0.5rem 1.25rem;
+  background-color: var(--clr-tertiary-100);
+  border-radius: 1.25rem;
+  color: var(--clr-neutral-0);
+}
+.shop-filter .filter-bar .vertical-divider {
+  width: 1px;
+  height: 1.5rem;
+  background-color: var(--clr-neutral-400);
+  border-radius: 1.25rem;
+}
+.shop-filter .filter-bar .filter-tag {
+  display: flex;
+  align-items: center;
+  gap: var(--space-0);
+  padding: 0.25rem 1rem;
+  border: 1px solid var(--clr-tertiary-100);
+  border-radius: 1.25rem;
+  color: var(--clr-tertiary-200);
+  font-size: 0.875rem;
+}
+.shop-filter .filter-bar div:has(.sort-button) {
+  justify-self: end;
+}
+.shop-filter .filter-bar .sort-button {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  padding: 0.5rem 1.25rem;
+  border: 1px solid var(--clr-tertiary-100);
+  border-radius: 1.25rem;
+  color: var(--clr-tertiary-200);
+}
+.shop-filter .filter-bar .sort-button .plus-icon path {
+  stroke: var(--clr-tertiary-200);
+}
+.shop-filter .horizontal-divider {
+  width: 100%;
+  height: 1px;
+  background-color: var(--clr-neutral-400);
+  border-radius: var(--clr-neutral-500);
+}
+
+.filter-modal {
+  width: min(900px, 90%);
+  margin-block: auto;
+  margin-inline: auto;
+  border: none;
+  border-radius: 1.25rem;
+}
+.filter-modal::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+.filter-modal::-webkit-scrollbar-thumb {
+  background-color: var(--clr-neutral-300);
+  border-radius: 5px;
+}
+.filter-modal::backdrop {
+  background: hsla(95, 17%, 48%, 0.5);
+  backdrop-filter: blur(0.25rem);
+  -webkit-backdrop-filter: blur(0.25rem);
+}
+.filter-modal .filter-modal-container {
+  display: grid;
+  gap: var(--space-4);
+  max-width: 900px;
+  margin-inline: auto;
+  padding: 1rem;
+  background-color: var(--clr-neutral-0);
+  border: 1px solid var(--clr-neutral-200);
+  border-radius: 1.25rem;
+}
+.filter-modal .filter-modal-container button:has(.x-icon) {
+  justify-self: start;
+  display: flex;
+  padding: 0.5rem;
+  background-color: var(--clr-neutral-100);
+  border-radius: 100vw;
+}
+.filter-modal .filter-modal-container .horizontal-divider {
+  width: 100%;
+  height: 1px;
+  background-color: var(--clr-neutral-200);
+  border-radius: var(--clr-neutral-500);
+}
+.filter-modal .filter-modal-container .filter-modal-group {
+  display: grid;
+  gap: var(--space-3);
+}
+.filter-modal .filter-modal-container .filter-modal-group .filter-modal-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+.filter-modal .filter-modal-container .filter-modal-group .filter-modal-tags .filter-modal-tag {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  padding: 0.25rem 0.75rem;
+  border: 1px solid var(--clr-neutral-400);
+  border-radius: 1.25rem;
+  color: var(--clr-tertiary-200);
+  font-size: 0.875rem;
+}
+.filter-modal .filter-modal-container .filter-modal-group .filter-modal-tags .filter-modal-tag.selected .circle {
+  background-color: var(--clr-tertiary-200);
+}
+.filter-modal .filter-modal-container .filter-modal-group .filter-modal-tags .filter-modal-tag .circle {
+  width: 0.875rem;
+  aspect-ratio: 1;
+  border: 1px solid var(--clr-neutral-400);
+  border-radius: 50%;
+}
+.filter-modal .filter-modal-container .filter-modal-group .filter-modal-tags .filter-modal-tag .circle.white {
+  background-color: var(--clr-neutral-0);
+}
+.filter-modal .filter-modal-container .filter-modal-group .filter-modal-tags .filter-modal-tag .circle.black {
+  background-color: var(--clr-neutral-900);
+}
+.filter-modal .filter-modal-container .filter-modal-group .filter-modal-tags .filter-modal-tag .circle.grey {
+  background-color: var(--clr-neutral-500);
+}
+
+/*# sourceMappingURL=filter.css.map */
