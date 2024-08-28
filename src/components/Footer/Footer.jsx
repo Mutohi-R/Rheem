@@ -1,68 +1,117 @@
-import './footer.scss';
+import { Link } from "react-router-dom";
+
+import "./footer.scss";
 import Logo from "../icons/Logo.jsx";
 import Button from "../ui/Button/Button.jsx";
 
 const Footer = () => {
-    return (
-        <footer className="primary-footer">
-            <div className="wrapper">
-                <div className="footer-container">
-                    <div className="footer-section-one | flow">
-                        <Logo />
-                        <p>Join our newsletter to stay up to date </p>
-                        <div className="subscribe-form | flex gap-2">
-                            <input type="text" id="subscribe" name="subscribe" placeholder="Enter your email"/>
-                            <Button type={"primary"} icon={true} label={"Subscribe"} />
-                        </div>
-                        <p className="consent">By subscribing, you agree to our <span>Privacy Policy</span> and consent to recieve updates from our company.</p>
-                    </div>
-
-                    <div className="footer-section-two">
-                        <div className="quick-links | flow">
-                            <h6>Quick links</h6>
-                            <div className="grid gap-0">
-                                <p>Home</p>
-                                <p>About us</p>
-                                <p>Contact us</p>
-                                <p>Split AC</p>
-                                <p>Window AC</p>
-                                <p>Cassette AC</p>
-                                <p>Top selling ACs</p>
-                            </div>
-                        </div>
-                        <div className="additional | flow">
-                            <h6>Additional</h6>
-                            <div  className="grid gap-0">
-                                <p>Store Locator</p>
-                                <p>FAQ</p>
-                                <p>Sitemap</p>
-                            </div>
-                        </div>
-                        <div className="follow | flow">
-                            <h6>Follow us</h6>
-                            <div className="grid gap-0">
-                                <p>Facebook</p>
-                                <p>Instagram</p>
-                                <p>X</p>
-                                <p>LinkedIn</p>
-                                <p>Youtube</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="footer-section-three">
-                        <p>&copy; 2024 Rheem Cooling. All rights reserved.</p>
-                    </div>
-
-                    <div className="footer-section-four">
-                        <p>Privacy Policy</p>
-                        <p>Terms of Service</p>
-                        <p>Cookies Settings</p>
-                    </div>
-                </div>
+  return (
+    <footer className="primary-footer">
+      <div className="wrapper">
+        <div className="footer-container">
+          <div className="footer-section-one | flow">
+            <Logo />
+            <p>Join our newsletter to stay up to date </p>
+            <div className="subscribe-form | flex gap-2">
+              <input
+                type="text"
+                id="subscribe"
+                name="subscribe"
+                placeholder="Enter your email"
+              />
+              <Button type={"primary"} icon={true} label={"Subscribe"} />
             </div>
-        </footer>
-    );
+            <p className="consent">
+              By subscribing, you agree to our <span>Privacy Policy</span> and
+              consent to recieve updates from our company.
+            </p>
+          </div>
+
+          <div className="footer-section-two">
+            <div className="quick-links | flow">
+              <h6>Quick links</h6>
+              <div className="grid gap-0">
+                <Link to="/">
+                  <p>Home</p>
+                </Link>
+                <Link to="/shop">
+                  <p>Shop</p>
+                </Link>
+                <Link to="/">
+                  <p>About us</p>
+                </Link>
+                <Link to="/">
+                  <p>Contact us</p>
+                </Link>
+                <Link to="/">
+                  <p>Split AC</p>
+                </Link>
+                <Link to="/">
+                  <p>Window AC</p>
+                </Link>
+                <Link to="/">
+                  <p>Cassette AC</p>
+                </Link>
+                <Link to="/">
+                  <p>Top selling ACs</p>
+                </Link>
+              </div>
+            </div>
+            <div className="additional | flow">
+              <h6>Additional</h6>
+              <div className="grid gap-0">
+                <Link to="/">
+                  <p>Store Locator</p>
+                </Link>
+                <Link to="/">
+                  <p>FAQ</p>
+                </Link>
+                <Link to="/">
+                  <p>Sitemap</p>
+                </Link>
+              </div>
+            </div>
+            <div className="follow | flow">
+              <h6>Follow us</h6>
+              <div className="grid gap-0">
+                <Link to="/">
+                  <p>Facebook</p>
+                </Link>
+                <Link to="/">
+                  <p>Instagram</p>
+                </Link>
+                <Link to="/">
+                  <p>X</p>
+                </Link>
+                <Link to="/">
+                  <p>LinkedIn</p>
+                </Link>
+                <Link to="/">
+                  <p>YouTube</p>
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          <div className="footer-section-three">
+            <p>&copy; 2024 Rheem Cooling. All rights reserved.</p>
+          </div>
+
+          <div className="footer-section-four">
+            <Link>
+              <p>Privacy Policy</p>
+            </Link>
+            <Link>
+              <p>Terms of Service</p>
+            </Link>
+            <Link>
+              <p>Cookies Settings</p>
+            </Link>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
 };
 
 export default Footer;

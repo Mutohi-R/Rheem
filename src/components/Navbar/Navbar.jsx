@@ -14,7 +14,7 @@ const Navbar = () => {
             <div className="wrapper">
                 <div className="flex align-items-center justify-content-between">
                     <div className="logo">
-                        <Logo/>
+                        <Link to="/"><Logo/></Link>
                     </div>
 
                     <nav className="primary-navigation">

@@ -3,63 +3,63 @@
     "id": 1,
     "inStock": true,
     "image": "src/assets/bs-split-ac-1.png",
-    "name": "Rheem FrostGuard",
+    "name": "Rheem Frostguard 1.5 Ton 6K Split AC",
     "type": "Split"
   },
   {
     "id": 2,
     "inStock": true,
     "image": "src/assets/bs-window-ac-5.png",
-    "name": "LG 10,000 BTU DUAL Inverter ENERGY STAR Window Air Conditioner",
+    "name": "LG ArticFlow 2 Ton Window AC",
     "type": "Window"
   },
   {
     "id": 3,
     "inStock": true,
     "image": "src/assets/bs-split-ac-3.png",
-    "name": "Rheem Frsadffd",
+    "name": "Samsung WindFree™ 3.0",
     "type": "Split"
   },
   {
     "id": 4,
     "inStock": true,
     "image": "src/assets/bs-window-ac-2.png",
-    "name": "Rheem Frsadffd",
+    "name": "Daikin CompactCool 1 Ton Window AC",
     "type": "Window"
   },
   {
     "id": 5,
     "inStock": true,
     "image": "src/assets/bs-window-ac-3.png",
-    "name": "Rheem Frsadffd",
+    "name": "Hitachi EcoChill 1.5 Ton Window AC",
     "type": "Window"
   },
   {
     "id": 6,
     "inStock": true,
     "image": "src/assets/bs-window-ac-4.png",
-    "name": "Rheem Frsadffd",
+    "name": "LG CompactCool 3 Ton Window AC",
     "type": "Window"
   },
   {
     "id": 7,
     "inStock": true,
     "image": "src/assets/bs-split-ac-2.png",
-    "name": "Rheem Frsadffd",
+    "name": "LG BreezeFlow 1.5 Ton Window AC",
     "type": "Split"
   },
   {
     "id": 8,
     "inStock": true,
     "image": "src/assets/bs-cassette-ac-1.png",
-    "name": "Rheem Frsadffd",
+    "name": "LG AirWave 2 Ton Cassette AC",
     "type": "Cassette"
   },
   {
     "id": 9,
     "inStock": true,
     "image": "src/assets/bs-window-ac-1.png",
-    "name": "Rheem Frsadffd",
+    "name": "Rheem ArcticGuard 1.5 Ton Window AC",
     "type": "Window"
   }
 ]

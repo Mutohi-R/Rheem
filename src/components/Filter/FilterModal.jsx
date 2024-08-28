@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types'
+
 import XIcon from '../icons/XIcon';
 import Button from '../ui/Button/Button';
 import './filter.scss'
@@ -130,5 +132,9 @@ const FilterModal = ({ onClose }) => {
         </div>
     );
 };
+
+FilterModal.propTypes = {
+    onClose: PropTypes.func.isRequired
+}
 
 export default FilterModal;
