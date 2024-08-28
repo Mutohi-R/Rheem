@@ -212,12 +212,12 @@
         "name": "LG LAN090 9K BTU Multi Zone Inverter Heat Pump Art Cool",
         "type": "Split",
         "image": "src/assets/other-prod/LG-LAN090-9K-BTU-Multi-Zone-Inverter-Heat-Pump-Art-Cool.png",
-        "price": 1199.99,
-        "rating": 4.5,
-        "review_count": 1743,
+        "price": 999.99,
+        "rating": 5,
+        "review_count": 1784,
         "description": "The LG LAN090 9K BTU Multi Zone Inverter Heat Pump Art Cool is designed for stylish and efficient cooling and heating in multiple zones. With its sleek design and powerful performance, it's perfect for modern homes looking for both aesthetics and functionality.",
         "brand": "LG",
-        "tonnage": 0.75,
+        "tonnage": 3,
         "consumption": 1500,
         "features": [
             "Art Cool Design",
@@ -247,7 +247,7 @@
             "Durable Cabinet",
             "Quiet Operation"
         ],
-        "color": "Gray"
+        "color": "Grey"
     },
     {
         "id": 13,
@@ -268,10 +268,10 @@
             "Quiet Operation",
             "Durable Cabinet"
         ],
-        "color": "Gray"
+        "color": "Grey"
     },
     {
-        "id": 13,
+        "id": 14,
         "name": "Rheem RA18AZ Endeavor Line Prestige Series Air Conditioner",
         "type": "Split",
         "image": "src/assets/other-prod/ra18az-endeavor-line-prestige-series-air-conditioner.png",
@@ -289,6 +289,6 @@
             "Quiet Operation",
             "Durable Cabinet"
         ],
-        "color": "Gray"
+        "color": "Grey"
     }
 ]
