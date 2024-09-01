@@ -1,7 +1,9 @@
+import PropTypes from 'prop-types'
+
 import Button from "../ui/Button/Button.jsx";
 import './bestsellercard.scss';
 
-const BestsellerCard = ({id, inStock, image, name, type}) => {
+const BestsellerCard = ({inStock, image, name}) => {
     return (
         <div className="bestseller-card">
             <div className="flex align-items-center justify-content-between flex-wrap">
@@ -25,6 +27,14 @@ const BestsellerCard = ({id, inStock, image, name, type}) => {
             </div>
         </div>
     );
+};
+
+BestsellerCard.propTypes = {
+    id: PropTypes.number.isRequired,
+    inStock: PropTypes.bool.isRequired,
+    image: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    type: PropTypes.string.isRequired,
 };
 
 export default BestsellerCard;

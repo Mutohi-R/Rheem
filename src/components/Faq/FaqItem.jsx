@@ -11,7 +11,7 @@ const FaqItem = ({ faq, selectedFaq, index, onClick }) => {
         className="faq-heading | flex align-items-start justify-content-between"
       >
         <p className="fw-bold">{faq.question}</p>
-        {selectedFaq === index ? <PlusIcon /> : <MinusIcon />}
+        {selectedFaq === index ? <MinusIcon /> : <PlusIcon />}
       </div>
       <div
         className={selectedFaq === index ? "faq-answer open" : "faq-answer"}

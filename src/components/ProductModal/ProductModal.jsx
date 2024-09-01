@@ -10,17 +10,21 @@ import Button from "../ui/Button/Button";
 import "./productmodal.scss";
 
 const ProductModal = ({ productId, onClose }) => {
-
+    // Find the product with the matching ID from the products data
     const product = products.find((product) => product.id === productId);
     if (!product) {
+        // Return null if the product is not found
         return null;
     }
 
     return (
         <div className="product-modal-container">
+            {/* Close button */}
             <button onClick={onClose} className="close-button">
                 <XIcon className="x-icon" />
             </button>
+            
+            {/* Product image section */}
             <div className="product-modal-image">
                 <div className="main-image">
                     <img
@@ -29,18 +33,26 @@ const ProductModal = ({ productId, onClose }) => {
                     />
                 </div>
             </div>
+
+            {/* Product details section */}
             <div className="product-modal-content">
                 <p className="product-modal-label">{product.type} AC</p>
                 <h3>{product.name}</h3>
+
+                {/* Product rating and review count */}
                 <div className="flex align-items-center gap-4">
                     <div className="flex align-items-center gap-0">
                         {[...Array(5)].map((_, index) => (
-                        <StarIcon key={index} fill={index < product.rating ? "filled" : "none"} color={"#FB8684"}/>
-                    ))}
+                            <StarIcon key={index} fill={index < product.rating ? "filled" : "none"} color={"#FB8684"}/>
+                        ))}
                     </div>
                     <p className="reviews-label">{product.review_count} reviews</p>
                 </div>
+
+                {/* Product description */}
                 <p>{product.description}</p>
+
+                {/* Price and quantity modifier */}
                 <div className="flex align-items-center gap-6">
                     <div className="grid gap-1">
                         <p className="product-modal-label">Price</p>
@@ -55,6 +67,8 @@ const ProductModal = ({ productId, onClose }) => {
                         </div>
                     </div>
                 </div>
+
+                {/* Additional product details */}
                 <div className="grid gap-1">
                     <div className="product-modal-description-group">
                         <p className="product-modal-label">Brand</p>
@@ -62,7 +76,7 @@ const ProductModal = ({ productId, onClose }) => {
                     </div>
                     <div className="product-modal-description-group">
                         <p className="product-modal-label">Tonnage</p>
-                        <p className="product-modal-features">{product.tonnage} Ton</p>
+                        <p className="product-modal-features">{product.tonnage}</p>
                     </div>
                     <div className="product-modal-description-group">
                         <p className="product-modal-label">Consumption</p>
@@ -73,7 +87,9 @@ const ProductModal = ({ productId, onClose }) => {
                         <div>
                             {
                                 product.features.map((feature, index) => (
-                                    <span className="product-modal-features" key={index}>{feature}{index < product.features.length - 1 ? ", " : ""}</span>
+                                    <span className="product-modal-features" key={index}>
+                                        {feature}{index < product.features.length - 1 ? ", " : ""}
+                                    </span>
                                 ))
                             }
                         </div>
@@ -83,6 +99,8 @@ const ProductModal = ({ productId, onClose }) => {
                         <p className="product-modal-features">{product.color}</p>
                     </div>
                 </div>
+
+                {/* Add to Cart button */}
                 <Button type={"outlined"} icon={false} label={"Add to Cart"} />
             </div>
         </div>

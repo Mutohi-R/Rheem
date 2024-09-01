@@ -134,6 +134,7 @@
                     cursor: pointer;
         
                     &.selected {
+                        border: 1px solid var(--clr-tertiary-200);
         
                         .circle {
                             background-color: var(--clr-tertiary-200);

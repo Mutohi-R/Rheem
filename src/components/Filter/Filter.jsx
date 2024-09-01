@@ -6,22 +6,28 @@ import "./filter.scss";
 import XIcon from "../icons/XIcon.jsx";
 import PlusIcon from "../icons/PlusIcon.jsx";
 
+// Filter component to handle the filtering logic and UI
 const Filter = ({ filters, setFilters, resetFilters }) => {
+    // useRef to control the modal element for filters
     const filterModal = useRef(null);
 
+    // Function to open the filter modal
     const openFilterModal = () => {
         if (filterModal.current) {
             filterModal.current.showModal();
         }
     };
 
+    // Function to close the filter modal
     const closeFilterModal = () => {
         if (filterModal.current) {
             filterModal.current.close();
         }
     };
 
+    // Function to handle the removal of a specific filter tag
     const handleRemoveFilter = (filterType, value) => {
+        // Update the filters state by removing the selected filter
         setFilters((prevFilters) => ({
             ...prevFilters,
             [filterType]: prevFilters[filterType].filter(
@@ -34,9 +40,11 @@ const Filter = ({ filters, setFilters, resetFilters }) => {
         <div className="shop-filter">
             <div className="grid gap-4">
                 <div className="grid gap-2">
+                    {/* Display the count of products shown */}
                     <p className="result-count">Showing 48 of 48</p>
                     <div className="filter-bar">
                         <div className="flex gap-3 flex-wrap align-items-center">
+                            {/* Button to open the filter modal */}
                             <button
                                 onClick={openFilterModal}
                                 className="filter-button"
@@ -45,6 +53,7 @@ const Filter = ({ filters, setFilters, resetFilters }) => {
                             </button>
                             <div className="vertical-divider"></div>
                             <div className="flex gap-1 flex-wrap">
+                                {/* Render filter tags for selected categories */}
                                 {filters.category.map((category, index) => (
                                     <div
                                         key={index}
@@ -61,6 +70,7 @@ const Filter = ({ filters, setFilters, resetFilters }) => {
                                     </div>
                                 ))}
 
+                                {/* Render filter tags for selected brands */}
                                 {filters.brand.map((brand, index) => (
                                     <div
                                         key={index}
@@ -74,6 +84,7 @@ const Filter = ({ filters, setFilters, resetFilters }) => {
                                     </div>
                                 ))}
 
+                                {/* Render filter tags for selected tonnage */}
                                 {filters.tonnage.map((tonnage, index) => (
                                     <div
                                         key={index}
@@ -90,6 +101,7 @@ const Filter = ({ filters, setFilters, resetFilters }) => {
                                     </div>
                                 ))}
 
+                                {/* Render filter tags for selected colors */}
                                 {filters.color.map((color, index) => (
                                     <div
                                         key={index}
@@ -104,6 +116,7 @@ const Filter = ({ filters, setFilters, resetFilters }) => {
                                 ))}
                             </div>
                         </div>
+                        {/* Button to handle sorting logic (currently only UI) */}
                         <div>
                             <div className="sort-button">
                                 <p>Sort By</p>
@@ -114,6 +127,7 @@ const Filter = ({ filters, setFilters, resetFilters }) => {
                 </div>
                 <div className="horizontal-divider"></div>
             </div>
+            {/* Modal component for advanced filter options */}
             <dialog
                 ref={filterModal}
                 id="filter-modal"
@@ -131,6 +145,7 @@ const Filter = ({ filters, setFilters, resetFilters }) => {
 };
 
 Filter.propTypes = {
+    // PropTypes to enforce expected prop types
     filters: PropTypes.object,
     setFilters: PropTypes.func,
     resetFilters: PropTypes.func,
