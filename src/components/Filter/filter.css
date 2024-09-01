@@ -30,6 +30,7 @@
   border-radius: 1.25rem;
   color: var(--clr-tertiary-200);
   font-size: 0.875rem;
+  cursor: pointer;
 }
 .shop-filter .filter-bar div:has(.sort-button) {
   justify-self: end;
@@ -114,6 +115,10 @@
   border-radius: 1.25rem;
   color: var(--clr-tertiary-200);
   font-size: 0.875rem;
+  cursor: pointer;
+}
+.filter-modal .filter-modal-container .filter-modal-group .filter-modal-tags .filter-modal-tag.selected {
+  border: 1px solid var(--clr-tertiary-200);
 }
 .filter-modal .filter-modal-container .filter-modal-group .filter-modal-tags .filter-modal-tag.selected .circle {
   background-color: var(--clr-tertiary-200);

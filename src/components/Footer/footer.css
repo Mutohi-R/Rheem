@@ -10,6 +10,13 @@
 .primary-footer .follow {
   grid-area: follow;
 }
+.primary-footer a {
+  text-decoration: none;
+  color: var(--clr-neutral-600);
+}
+.primary-footer a:hover {
+  color: var(--clr-primary-900);
+}
 .primary-footer .footer-container {
   display: grid;
   gap: var(--space-6);
@@ -74,7 +81,9 @@
   display: grid;
   gap: var(--space-0);
   font-size: 0.875rem;
-  color: var(--clr-neutral-500);
+  text-decoration: underline;
+}
+.primary-footer .footer-container .footer-section-four a {
   text-decoration: underline;
 }
 @media only screen and (width > 900px) {

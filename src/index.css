@@ -13,6 +13,7 @@
   --clr-primary-200: #b5d39f;
   --clr-primary-300: #6a9147;
   --clr-primary-400: #6a9a47;
+  --clr-primary-500: #4b6e2e;
   --clr-secondary-100: #fedddc;
   --clr-secondary-200: #fc9e9c;
   --clr-secondary-300: #fb8684;
@@ -141,6 +142,7 @@ ol[role=list] {
 body {
   min-height: 100vh;
   line-height: 1.5;
+  background-color: var(--clr-neutral-100);
 }
 
 /* Set shorter line heights on headings and interactive elements */
@@ -434,6 +436,19 @@ h6,
 .border-primary-400 {
   border: 1px solid;
   border-color: var(--clr-primary-400);
+}
+
+.bg-primary-500 {
+  background-color: var(--clr-primary-500);
+}
+
+.text-primary-500 {
+  color: var(--clr-primary-500);
+}
+
+.border-primary-500 {
+  border: 1px solid;
+  border-color: var(--clr-primary-500);
 }
 
 .bg-secondary-100 {
@@ -2426,10 +2441,6 @@ h6,
   --_padding: 1rem;
   width: min(var(--_max-width), 100% - var(--_padding) * 2);
   margin-inline: auto;
-}
-
-body {
-  background-color: var(--clr-neutral-100);
 }
 
 /*# sourceMappingURL=index.css.map */

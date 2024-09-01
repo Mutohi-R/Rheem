@@ -1,5 +1,5 @@
 .hero {
-  padding-block-start: 2rem;
+  padding-block-start: 4rem;
 }
 .hero .top {
   position: relative;
@@ -11,11 +11,16 @@
   overflow: hidden;
   border-radius: 1.25rem;
 }
+.hero .top .hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .hero .top .cta {
   display: grid;
   gap: var(--space-2);
 }
-@media only screen and (width > 45em) {
+@media only screen and (width > 700px) {
   .hero .top h1 {
     position: absolute;
     top: 2rem;
@@ -38,27 +43,6 @@
     -webkit-backdrop-filter: blur(0.2rem);
     backdrop-filter: blur(0.2rem);
     border-radius: 1.25rem;
-  }
-}
-.hero .bottom {
-  display: grid;
-  gap: var(--space-4);
-}
-.hero .bottom div:first-child {
-  display: grid;
-  gap: var(--space-2);
-}
-@media only screen and (width > 45em) {
-  .hero .bottom {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .hero .bottom div:first-child {
-    justify-items: start;
-  }
-  .hero .bottom div:first-child p {
-    max-width: 70ch;
   }
 }
 

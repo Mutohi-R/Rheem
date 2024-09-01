@@ -14,12 +14,35 @@
 .bestseller-card .tag {
   padding: 0.25rem 1rem;
   width: 100%;
-  background-color: var(--clr-neutral-200);
+  background-color: var(--clr-neutral-100);
   border-radius: 1.25rem;
   font-size: 0.875rem;
 }
-.bestseller-card .tag:nth-child(2) {
-  margin-inline-start: calc(-1 * var(--space-0));
+
+.swiper {
+  z-index: 0;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  background-size: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 1.5rem;
+  border-radius: 100vw;
+}
+
+.swiper-button-next {
+  background-image: url(../../assets/NextArrowIcon.svg);
+}
+
+.swiper-button-prev {
+  background-image: url(../../assets/PrevArrowIcon.svg);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: "";
 }
 
 /*# sourceMappingURL=bestsellercard.css.map */

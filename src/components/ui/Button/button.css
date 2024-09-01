@@ -8,12 +8,22 @@ button {
   border: none;
   border-radius: 1.25rem;
 }
+button:hover {
+  cursor: pointer;
+}
+button:hover .caret-icon {
+  transform: translateX(0.25rem);
+  transition: all 0.3s ease;
+}
 
 button.primary {
   background-color: var(--clr-primary-200);
 }
 button.primary .caret-icon path {
   fill: var(--clr-neutral-0);
+}
+button.primary:hover {
+  background-color: var(--clr-primary-300);
 }
 
 button.secondary {
@@ -22,11 +32,21 @@ button.secondary {
 button.secondary .caret-icon path {
   fill: var(--clr-neutral-0);
 }
+button.secondary:hover {
+  background-color: var(--clr-secondary-300);
+}
 
 button.outlined {
   color: var(--clr-primary-300);
   background-color: transparent;
   border: 1px solid var(--clr-primary-400);
+}
+button.outlined:hover {
+  color: var(--clr-primary-500);
+  border-color: var(--clr-primary-500);
+}
+button.outlined:hover .caret-icon path {
+  fill: var(--clr-primary-500);
 }
 
 /*# sourceMappingURL=button.css.map */

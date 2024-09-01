@@ -52,9 +52,9 @@ const Navbar = () => {
                                 </Link>
                             </li>
                             <li>
-                                <a className="nav-link" href="#contact">
+                                <Link to="/contact" className="nav-link">
                                     Contact
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </nav>
@@ -94,9 +94,9 @@ const Navbar = () => {
                                     </Link>
                                 </li>
                                 <li>
-                                    <a className="nav-link" href="#">
+                                    <Link to="/contact" className="nav-link">
                                         Contact
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li className="search">
                                     <SearchIcon />
@@ -111,7 +111,7 @@ const Navbar = () => {
                         </nav>
                     )}
 
-                    {/* Utilities section with search, cart, and user icons */} 
+                    {/* Utilities section with search, cart, and user icons */}
                     <div className="utilities flex align-items-center gap-4">
                         <div className="search">
                             <SearchIcon />

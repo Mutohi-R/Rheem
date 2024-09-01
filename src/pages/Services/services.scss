@@ -23,13 +23,101 @@
             gap: var(--space-2);
         }
         
-        @media only screen and (width > 45em) {
+        @media only screen and (width > 720px) {
             .services-hero-heading {
                 position: absolute;
                 top: 2rem;
                 left: 2rem;
                 color: var(--clr-neutral-0);
             }
+        }
+    }
+
+    .services-hero-text {
+        display: grid;
+        justify-content: space-between;
+        gap: var(--space-4);
+        align-items: start;
+        padding-block-start: 3rem;
+
+        h2 {
+            max-width: 20ch;
+        }
+
+        p {
+            max-width: 80ch;
+        }
+
+        @media only screen and (width > 840px) {
+            grid-auto-flow: column;
+        }
+    }
+}
+
+.services-offerings {
+    .services-offerings-container {
+        .services-offerings-list {
+            display: grid;
+            gap: var(--space-4);
+
+            @media only screen and (width > 800px) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            @media only screen and (width > 1400px) {
+                grid-template-columns: repeat(4, 1fr);
+            }
+
+            .services-offerings-card {
+                display: grid;
+                gap: var(--space-2);
+                align-content: start;
+                padding: 1rem;
+                background-color: var(--clr-neutral-0);
+                border: 1px solid var(--clr-neutral-200);
+                border-radius: 1.25rem;
+
+                .icon {
+                    width: 48px;
+                    height: 48px;
+                }
+            }
+        }
+    }
+}
+
+.horizontal-rule {
+    width: 100%;
+    height: 1px;
+    background-color: var(--clr-neutral-200);
+}
+
+.reasons {
+    padding-block-start: 8.75rem;
+    .reasons-container {
+        display: grid;
+        gap: var(--space-4);
+        align-items: center;
+
+        @media only screen and (width > 800px) {
+            grid-template-columns: repeat(2, 1fr);
+            gap: var(--space-6);
+        }
+
+        .reasons-image {
+            // max-height: 572px;
+            overflow: hidden;
+            border-radius: 1.25rem;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .bullet-icon {
+            width: 8px;
+            height: 8px;
         }
     }
 }
