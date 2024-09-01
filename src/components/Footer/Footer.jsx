@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
 import "./footer.scss";
+import Location from "../Location/Location.jsx";
 import Logo from "../icons/Logo.jsx";
 import Button from "../ui/Button/Button.jsx";
 
@@ -105,7 +106,12 @@ const Footer = () => {
               <p>Cookies Settings</p>
             </Link>
           </div>
+
+          <div className="footer-section-five">
+            <Location />
+          </div>
         </div>
+        
       </div>
     </footer>
   );
