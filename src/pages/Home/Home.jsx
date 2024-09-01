@@ -168,7 +168,7 @@ const Home = () => {
           </div>
         </section>
 
-        <section className="contact">
+        <section id="contact" className="contact">
           <div className="wrapper">
             <div className="grid gap-4">
               <div className="grid gap-2">

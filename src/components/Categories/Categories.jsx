@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import StarIcon from "../icons/StarIcon.jsx";
 import './categories.scss'
 import Button from "../ui/Button/Button.jsx";
@@ -31,11 +33,9 @@ const Categories = () => {
                         </div>
 
                         <div className="cta">
-                            {/*<button>*/}
-                            {/*    <p>View Split ACs</p>*/}
-                            {/*    <CaretIcon/>*/}
-                            {/*</button>*/}
-                            <Button label={"View Split ACs"} icon={false} type={"primary"}/>
+                            <Link to="/shop">
+                                <Button label={"View Split ACs"} icon={false} type={"primary"}/>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -66,13 +66,9 @@ const Categories = () => {
                         </div>
 
                         <div className="cta">
-                            {/*<button>*/}
-                            {/*    <p>View Split ACs</p>*/}
-                            {/*    <CaretIcon/>*/}
-                            {/*</button>*/}
-                            <Button label={"View Cassette" +
-                                "" +
-                                " ACs"} icon={false} type={"primary"}/>
+                            <Link to="/shop">
+                                <Button label={"View Cassette ACs"} icon={false} type={"primary"}/>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -103,11 +99,9 @@ const Categories = () => {
                         </div>
 
                         <div className="cta">
-                            {/*<button>*/}
-                            {/*    <p>View Split ACs</p>*/}
-                            {/*    <CaretIcon/>*/}
-                            {/*</button>*/}
-                            <Button label={"View Window ACs"} icon={false} type={"primary"}/>
+                            <Link to="/shop">
+                                <Button label={"View Window ACs"} icon={false} type={"primary"}/>
+                            </Link>
                         </div>
                     </div>
                 </div>

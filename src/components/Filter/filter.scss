@@ -36,6 +36,7 @@
             border-radius: 1.25rem;
             color: var(--clr-tertiary-200);
             font-size: 0.875rem;
+            cursor: pointer;
         }
 
         div:has(.sort-button) {
@@ -130,8 +131,10 @@
                     border-radius: 1.25rem;
                     color: var(--clr-tertiary-200);
                     font-size: 0.875rem;
+                    cursor: pointer;
         
                     &.selected {
+                        border: 1px solid var(--clr-tertiary-200);
         
                         .circle {
                             background-color: var(--clr-tertiary-200);

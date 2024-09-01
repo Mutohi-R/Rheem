@@ -1,12 +1,12 @@
-.shop-hero {
+.services-hero {
     padding-block-start: 4rem;
 
-    .shop-hero-container {
+    .services-hero-container {
         position: relative;
         display: grid;
         gap: var(--space-4);
 
-       .shop-hero-image {
+       .services-hero-image {
             max-height: 572px;
             overflow: hidden;
             border-radius: 1.25rem;
@@ -18,13 +18,13 @@
             object-fit: cover;
         }
 
-        .shop-hero-heading {
+        .services-hero-heading {
             display: grid;
             gap: var(--space-2);
         }
         
         @media only screen and (width > 45em) {
-            .shop-hero-heading {
+            .services-hero-heading {
                 position: absolute;
                 top: 2rem;
                 left: 2rem;
@@ -32,8 +32,4 @@
             }
         }
     }
-}
-
-.product-listing {
-    padding-block-start: 2rem;
 }
