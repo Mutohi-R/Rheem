@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-import "./Home.scss";
+import "./home.scss";
 import Navbar from "../../components/Navbar/Navbar.jsx";
 import BestsellerSlider from "../../components/BestsellerCard/BestsellerSlider.jsx";
 import Button from "../../components/ui/Button/Button.jsx";
