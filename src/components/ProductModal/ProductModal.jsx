@@ -1,3 +1,4 @@
+import { useState } from "react";
 import PropTypes from "prop-types";
 import products from "../../data/products.json";
 
@@ -10,6 +11,22 @@ import Button from "../ui/Button/Button";
 import "./productmodal.scss";
 
 const ProductModal = ({ productId, onClose }) => {
+
+    // State for product quantity
+    const [quantity, setQuantity] = useState(1);
+
+    // Function to increase the quantity count
+    const increaseQuantityCount = () => {
+        setQuantity(quantity + 1);
+    }
+
+    // Function to decrease the quantity count
+    const decreaseQuantityCount = () => {
+        if (quantity > 1) {
+            setQuantity(quantity - 1);
+        }
+    }
+
     // Find the product with the matching ID from the products data
     const product = products.find((product) => product.id === productId);
     if (!product) {
@@ -61,9 +78,13 @@ const ProductModal = ({ productId, onClose }) => {
                     <div className="grid gap-1">
                         <p className="product-modal-label">Quantity</p>
                         <div className="quantity-modifier">
-                            <MinusIcon />
-                            <p className="count fs-5 fw-bold">1</p>
-                            <PlusIcon />
+                            <div className="flex"onClick={decreaseQuantityCount}>
+                                <MinusIcon />
+                            </div>
+                            <p className="count fs-5 fw-bold">{quantity}</p>
+                            <div className="flex" onClick={increaseQuantityCount} >
+                                <PlusIcon />
+                            </div>
                         </div>
                     </div>
                 </div>
