@@ -1,12 +1,13 @@
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 import "./visitorcount.scss";
 
 const VisitorCount = () => {
     const [visitorCount, setVisitorCount] = useState(0);
-    const hasIncremented = useRef(false);
 
     useEffect(() => {
-        if (!hasIncremented.current) {
+        // check if the count has been incremented in this session
+        const hasIncremented = sessionStorage.getItem("hasIncremented");
+        if (!hasIncremented) {
             // Get the current count from local storage or initialize it to 0
             let visitCount = parseInt(localStorage.getItem("visitCount")) || 0;
             // Increment the count
@@ -15,8 +16,11 @@ const VisitorCount = () => {
             localStorage.setItem("visitCount", visitCount);
             // update the state
             setVisitorCount(visitCount);
-            // Set the flag to true so it doesn't increment again
-            hasIncremented.current = true;
+            // mark that the count has been incremented in this session
+            sessionStorage.setItem("hasIncremented", true);            
+        } else {
+            // if the count has been incremented in this session, get the count from local storage
+            setVisitorCount(parseInt(localStorage.getItem("visitCount")) || 0);
         }
     }, []);
 
