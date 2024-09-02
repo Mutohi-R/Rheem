@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import VisitorCount from "../VisitorCount/VisitorCount.jsx";
 import SearchIcon from "../icons/SearchIcon.jsx";
@@ -26,9 +26,9 @@ const Navbar = () => {
             <div className="wrapper">
                 <div className="flex align-items-center justify-content-between">
                     <div className="logo">
-                        <Link to="/">
+                        <NavLink to="/">
                             <Logo />
-                        </Link>
+                        </NavLink>
                         <VisitorCount />
                     </div>
 
@@ -39,24 +39,24 @@ const Navbar = () => {
                             role={"list"}
                         >
                             <li>
-                                <Link to="/" className="nav-link">
+                                <NavLink to="/" className="nav-link">
                                     Home
-                                </Link>
+                                </NavLink>
                             </li>
                             <li>
-                                <Link to="/shop" className="nav-link">
+                                <NavLink to="/shop" className="nav-link">
                                     Shop
-                                </Link>
+                                </NavLink>
                             </li>
                             <li>
-                                <Link to="/services" className="nav-link">
+                                <NavLink to="/services" className="nav-link">
                                     Services
-                                </Link>
+                                </NavLink>
                             </li>
                             <li>
-                                <Link to="/contact" className="nav-link">
+                                <NavLink to="/contact" className="nav-link">
                                     Contact
-                                </Link>
+                                </NavLink>
                             </li>
                         </ul>
                     </nav>
@@ -81,24 +81,24 @@ const Navbar = () => {
                         <nav className="mobile-navigation">
                             <ul className="" role={"list"}>
                                 <li>
-                                    <Link to="/" className="nav-link">
+                                    <NavLink to="/" className="nav-link">
                                         Home
-                                    </Link>
+                                    </NavLink>
                                 </li>
                                 <li>
-                                    <Link to="/shop" className="nav-link">
+                                    <NavLink to="/shop" className="nav-link">
                                         Shop
-                                    </Link>
+                                    </NavLink>
                                 </li>
                                 <li>
-                                    <Link to="/services" className="nav-link">
+                                    <NavLink to="/services" className="nav-link">
                                         Services
-                                    </Link>
+                                    </NavLink>
                                 </li>
                                 <li>
-                                    <Link to="/contact" className="nav-link">
+                                    <NavLink to="/contact" className="nav-link">
                                         Contact
-                                    </Link>
+                                    </NavLink>
                                 </li>
                                 <li className="search">
                                     <SearchIcon />

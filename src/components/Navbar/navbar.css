@@ -16,6 +16,10 @@
 .primary-navigation ul .nav-link:hover {
   color: var(--clr-neutral-900);
 }
+.primary-navigation ul .nav-link.active {
+  font-weight: 400;
+  color: var(--clr-primary-900);
+}
 @media only screen and (width < 750px) {
   .primary-navigation {
     display: none;
