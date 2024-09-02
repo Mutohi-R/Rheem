@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
+import VisitorCount from "../VisitorCount/VisitorCount.jsx";
 import SearchIcon from "../icons/SearchIcon.jsx";
 import XIcon from "../icons/XIcon.jsx";
 import UserIcon from "../icons/UserIcon.jsx";
@@ -28,6 +29,7 @@ const Navbar = () => {
                         <Link to="/">
                             <Logo />
                         </Link>
+                        <VisitorCount />
                     </div>
 
                     {/* Primary navigation menu */}
