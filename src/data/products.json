@@ -1,294 +1,294 @@
 [
-    {
-        "id": 1,
-        "name": "LG 10,000 BTU DUAL Inverter ENERGY STAR Window Air Conditioner",
-        "type": "Window",
-        "image": "src/assets/10000-BTU-DUAL-Inverter-ENERGY-STAR-Window-Air-Conditioner/10000-BTU-DUAL-Inverter-ENERGY-STAR-Window-Air-Conditioner-1.png",
-        "price": 499.99,
-        "rating": 4,
-        "review_count": 3478,
-        "description": "Experience powerful and efficient cooling with the LG 10,000 BTU DUAL Inverter Air Conditioner. Designed for spaces up to 450 square feet, this ENERGY STAR certified unit reduces energy consumption while keeping you comfortable.",
-        "brand": "LG",
-        "tonnage": "2 Tons",
-        "consumption": 2500,
-        "features": [
-            "DUAL Inverter Compressor™",
-            "Energy Saver Mode",
-            "24-Hour On/Off Timer",
-            "SmartThinQ® Technology",
-            "Low Noise Operation"
-        ],
-        "color": "White"
-    },
-    {
-        "id": 2,
-        "name": "LG 17,500/18,000 BTU Window Air Conditioner",
-        "type": "Window",
-        "image": "src/assets/17500-18000-BTU-Window-Air-Conditioner/17500-18000-BTU-Window-Air-Conditioner-1.png",
-        "price": 599.99,
-        "rating": 4,
-        "review_count": 2789,
-        "description": "Cool large spaces with ease using the LG 17,500/18,000 BTU Window Air Conditioner, ideal for rooms up to 1,000 square feet. This unit provides powerful cooling and features multiple fan speeds for customized comfort.",
-        "brand": "LG",
-        "tonnage": "2 Tons",
-        "consumption": 3500,
-        "features": [
-            "Multiple Cooling/Heating Speeds",
-            "Auto Restart",
-            "Energy Saver Mode",
-            "4-Way Air Deflection",
-            "Remote Control"
-        ],
-        "color": "White"
-    },
-    {
-        "id": 3,
-        "name": "LG 8,000 BTU SMART Wi-Fi Enabled Window Air Conditioner",
-        "type": "Window",
-        "image": "src/assets/8000-BTU-SMART-Wi-Fi-Enabled-Window-Air-Conditioner/8000-BTU-SMART-Wi-Fi-Enabled-Window-Air-Conditioner-1.png",
-        "price": 299.99,
-        "rating": 3,
-        "review_count": 4231,
-        "description": "Stay cool and comfortable with the LG 8,000 BTU Air Conditioner, perfect for cooling spaces up to 350 square feet. Whether you’re relaxing at home or working in your office, this air conditioner provides the ideal climate control.",
-        "brand": "LG",
-        "tonnage": "1.5 Tons",
-        "consumption": 2200,
-        "features": [
-            "SmartThinQ® Technology",
-            "Energy Saver Mode",
-            "24-Hour On/Off Timer",
-            "Anti-bacterial Filter"
-        ],
-        "color": "White"
-    },
-    {
-        "id": 4,
-        "name": "Samsung WindFree™* 3.0e",
-        "type": "Split",
-        "image": "src/assets/other-prod/samsung-split-2.png",
-        "price": 399.99,
-        "rating": 4.5,
-        "review_count": 1987,
-        "description": "Enjoy cool comfort with the Samsung WindFree™* 3.0e Split Air Conditioner, featuring innovative WindFree™* cooling technology that disperses air gently and evenly without the discomfort of direct cold airflow. Ideal for medium-sized rooms.",
-        "brand": "Samsung",
-        "tonnage": "1 Ton",
-        "consumption": 1800,
-        "features": [
-            "WindFree™* Cooling Technology",
-            "Digital Inverter Boost",
-            "Triple Protector Plus",
-            "SmartThings App Control"
-        ],
-        "color": "White"
-    },
-    {
-        "id": 5,
-        "name": "LG 12,000 BTU Smart Wi-Fi Enabled Window Air Conditioner",
-        "type": "Window",
-        "image": "src/assets/12000-BTU-Smart-Wi-Fi-Enabled-WIndow-Air-Conditioner/12000-BTU-Smart-Wi-Fi-Enabled-WIndow-Air-Conditioner-1.png",
-        "price": 499.99,
-        "rating": 4.8,
-        "review_count": 3124,
-        "description": "Keep your space cool and connected with the LG 12,000 BTU Smart Wi-Fi Enabled Window Air Conditioner. Perfect for rooms up to 550 square feet, this unit offers powerful cooling and smart features accessible via your smartphone.",
-        "brand": "LG",
-        "tonnage": "2.5",
-        "consumption": 2400,
-        "features": [
-            "SmartThinQ® Technology",
-            "Energy Saver Mode",
-            "24-Hour On/Off Timer",
-            "Low Noise Performance",
-            "Wi-Fi Enabled"
-        ],
-        "color": "White"
-    },
-    {
-        "id": 6,
-        "name": "LG 10,000 BTU Smart Wi-Fi Enabled Window Air Conditioner",
-        "type": "Window",
-        "image": "src/assets/8000-BTU-SMART-Wi-Fi-Enabled-Window-Air-Conditioner/8000-BTU-SMART-Wi-Fi-Enabled-Window-Air-Conditioner-4.png",
-        "price": 599.99,
-        "rating": 4.9,
-        "review_count": 2567,
-        "description": "Experience advanced cooling with the LG 10,000 BTU Smart Wi-Fi Enabled Window Air Conditioner, perfect for spaces up to 450 square feet. Control your comfort with smart features and energy-efficient operation.",
-        "brand": "LG",
-        "tonnage": "2 Tons",
-        "consumption": 2300,
-        "features": [
-            "SmartThinQ® Technology",
-            "Energy Saver Mode",
-            "24-Hour On/Off Timer",
-            "Dual Inverter Compressor",
-            "Wi-Fi Enabled"
-        ],
-        "color": "White"
-    },
-    {
-        "id": 7,
-        "name": "Samsung Max Heat® 3.0",
-        "type": "Split",
-        "image": "src/assets/other-prod/samsung-split-5.png",
-        "price": 599.99,
-        "rating": 5,
-        "review_count": 1823,
-        "description": "The Samsung Max Heat® 3.0 Split Air Conditioner provides powerful cooling and heating, making it ideal for year-round comfort. Perfect for medium to large spaces, it features advanced technology for energy efficiency and superior performance.",
-        "brand": "Samsung",
-        "tonnage": "5 Tons",
-        "consumption": 2200,
-        "features": [
-            "Max Heat® Technology",
-            "Digital Inverter Boost",
-            "Triple Protector Plus",
-            "SmartThings App Control",
-            "WindFree™* Cooling Technology"
-        ],
-        "color": "White"
-    },
-    {
-        "id": 8,
-        "name": "Samsung WindFree™* 3.0i",
-        "type": "Split",
-        "image": "src/assets/other-prod/samsung-split-8.png",
-        "price": 799.99,
-        "rating": 4,
-        "review_count": 2456,
-        "description": "The Samsung WindFree™* 3.0i Split Air Conditioner offers premium cooling performance with WindFree™* technology, which disperses air gently and evenly. Ideal for larger rooms, it ensures comfort without the draft of direct airflow.",
-        "brand": "Samsung",
-        "tonnage": "2.5 Tons",
-        "consumption": 2600,
-        "features": [
-            "WindFree™* Cooling Technology",
-            "Digital Inverter Boost",
-            "SmartThings App Control",
-            "Triple Protector Plus",
-            "Auto Clean Function"
-        ],
-        "color": "White"
-    },
-    {
-        "id": 9,
-        "name": "Samsung Hylex™",
-        "type": "Split",
-        "image": "src/assets/other-prod/samsung-split-7.png",
-        "price": 899.99,
-        "rating": 3,
-        "review_count": 3120,
-        "description": "The Samsung Hylex™ Split Air Conditioner delivers exceptional cooling performance with cutting-edge technology. Designed for larger spaces, it offers powerful cooling with advanced features to enhance comfort and efficiency.",
-        "brand": "Samsung",
-        "tonnage": "2.5 Tons",
-        "consumption": 2800,
-        "features": [
-            "Advanced Inverter Technology",
-            "WindFree™* Cooling",
-            "SmartThings App Integration",
-            "Triple Protector Plus",
-            "Eco Mode"
-        ],
-        "color": "White"
-    },
-    {
-        "id": 10,
-        "name": "Samsung Max 36k",
-        "type": "Split",
-        "image": "src/assets/other-prod/samsung-split-4.png",
-        "price": 999.99,
-        "rating": 5,
-        "review_count": 1984,
-        "description": "The Samsung Max 36k Split Air Conditioner offers high-performance cooling for large spaces. With advanced technology and energy-efficient features, it ensures optimal comfort and efficiency for both residential and commercial applications.",
-        "brand": "Samsung",
-        "tonnage": "5 Tons",
-        "consumption": 3200,
-        "features": [
-            "High-Capacity Cooling",
-            "Digital Inverter Technology",
-            "SmartThings App Control",
-            "Eco Mode",
-            "Quiet Operation"
-        ],
-        "color": "White"
-    },
-    {
-        "id": 11,
-        "name": "LG LAN090 9K BTU Multi Zone Inverter Heat Pump Art Cool",
-        "type": "Split",
-        "image": "src/assets/other-prod/LG-LAN090-9K-BTU-Multi-Zone-Inverter-Heat-Pump-Art-Cool.png",
-        "price": 999.99,
-        "rating": 5,
-        "review_count": 1784,
-        "description": "The LG LAN090 9K BTU Multi Zone Inverter Heat Pump Art Cool is designed for stylish and efficient cooling and heating in multiple zones. With its sleek design and powerful performance, it's perfect for modern homes looking for both aesthetics and functionality.",
-        "brand": "LG",
-        "tonnage": "2.5 Tons",
-        "consumption": 1500,
-        "features": [
-            "Art Cool Design",
-            "Inverter Technology",
-            "Multi-Zone Capability",
-            "Energy Efficient",
-            "Low Noise Operation"
-        ],
-        "color": "Black"
-    },
-    {
-        "id": 12,
-        "name": "Rheem RA15AZ Endeavor Line Classic Plus Series Air Conditioner",
-        "type": "Standing",
-        "image": "src/assets/other-prod/ra15az-endeavor-line-classic-plus-series-air-conditioner.png",
-        "price": 769.99,
-        "rating": 4,
-        "review_count": 2134,
-        "description": "The Rheem RA15AZ Endeavor Line Classic Plus Series Air Conditioner offers reliable and efficient cooling for large spaces. With its robust design and advanced features, it ensures consistent performance and comfort during hot weather.",
-        "brand": "Rheem",
-        "tonnage": "2.5 Tons",
-        "consumption": 3000,
-        "features": [
-            "Classic Plus Series",
-            "Scroll Compressor",
-            "Efficient Cooling",
-            "Durable Cabinet",
-            "Quiet Operation"
-        ],
-        "color": "Grey"
-    },
-    {
-        "id": 13,
-        "name": "Rheem RA16AZ Endeavor Line Classic Plus Series Air Conditioner",
-        "type": "Split",
-        "image": "src/assets/other-prod/ra16az-endeavor-line-classic-plus-series-air-conditioner.png",
-        "price": 385.99,
-        "rating": 4,
-        "review_count": 1678,
-        "description": "The Rheem RA16AZ Endeavor Line Classic Plus Series Air Conditioner provides efficient and reliable cooling for medium to large spaces. Its advanced technology and durable construction make it a perfect choice for comfortable living.",
-        "brand": "Rheem",
-        "tonnage": "1.5 Tons",
-        "consumption": 2500,
-        "features": [
-            "Classic Plus Series",
-            "Scroll Compressor",
-            "Energy Efficient",
-            "Quiet Operation",
-            "Durable Cabinet"
-        ],
-        "color": "Grey"
-    },
-    {
-        "id": 14,
-        "name": "Rheem RA18AZ Endeavor Line Prestige Series Air Conditioner",
-        "type": "Split",
-        "image": "src/assets/other-prod/ra18az-endeavor-line-prestige-series-air-conditioner.png",
-        "price": 385.99,
-        "rating": 4.5,
-        "review_count": 1895,
-        "description": "The Rheem RA18AZ Endeavor Line Prestige Series Air Conditioner offers top-tier cooling performance with advanced features for enhanced comfort and efficiency. Ideal for medium to large spaces, it delivers reliable and energy-efficient cooling.",
-        "brand": "Rheem",
-        "tonnage": "2.5 Tons",
-        "consumption": 2450,
-        "features": [
-            "Prestige Series",
-            "Scroll Compressor",
-            "Energy Efficient",
-            "Quiet Operation",
-            "Durable Cabinet"
-        ],
-        "color": "Grey"
-    }
+  {
+    "id": 1,
+    "name": "LG 10,000 BTU DUAL Inverter ENERGY STAR Window Air Conditioner",
+    "type": "Window",
+    "image": "/assets/10000-BTU-DUAL-Inverter-ENERGY-STAR-Window-Air-Conditioner/10000-BTU-DUAL-Inverter-ENERGY-STAR-Window-Air-Conditioner-1.png",
+    "price": 499.99,
+    "rating": 4,
+    "review_count": 3478,
+    "description": "Experience powerful and efficient cooling with the LG 10,000 BTU DUAL Inverter Air Conditioner. Designed for spaces up to 450 square feet, this ENERGY STAR certified unit reduces energy consumption while keeping you comfortable.",
+    "brand": "LG",
+    "tonnage": "2 Tons",
+    "consumption": 2500,
+    "features": [
+      "DUAL Inverter Compressor™",
+      "Energy Saver Mode",
+      "24-Hour On/Off Timer",
+      "SmartThinQ® Technology",
+      "Low Noise Operation"
+    ],
+    "color": "White"
+  },
+  {
+    "id": 2,
+    "name": "LG 17,500/18,000 BTU Window Air Conditioner",
+    "type": "Window",
+    "image": "/assets/17500-18000-BTU-Window-Air-Conditioner/17500-18000-BTU-Window-Air-Conditioner-1.png",
+    "price": 599.99,
+    "rating": 4,
+    "review_count": 2789,
+    "description": "Cool large spaces with ease using the LG 17,500/18,000 BTU Window Air Conditioner, ideal for rooms up to 1,000 square feet. This unit provides powerful cooling and features multiple fan speeds for customized comfort.",
+    "brand": "LG",
+    "tonnage": "2 Tons",
+    "consumption": 3500,
+    "features": [
+      "Multiple Cooling/Heating Speeds",
+      "Auto Restart",
+      "Energy Saver Mode",
+      "4-Way Air Deflection",
+      "Remote Control"
+    ],
+    "color": "White"
+  },
+  {
+    "id": 3,
+    "name": "LG 8,000 BTU SMART Wi-Fi Enabled Window Air Conditioner",
+    "type": "Window",
+    "image": "/assets/8000-BTU-SMART-Wi-Fi-Enabled-Window-Air-Conditioner/8000-BTU-SMART-Wi-Fi-Enabled-Window-Air-Conditioner-1.png",
+    "price": 299.99,
+    "rating": 3,
+    "review_count": 4231,
+    "description": "Stay cool and comfortable with the LG 8,000 BTU Air Conditioner, perfect for cooling spaces up to 350 square feet. Whether you’re relaxing at home or working in your office, this air conditioner provides the ideal climate control.",
+    "brand": "LG",
+    "tonnage": "1.5 Tons",
+    "consumption": 2200,
+    "features": [
+      "SmartThinQ® Technology",
+      "Energy Saver Mode",
+      "24-Hour On/Off Timer",
+      "Anti-bacterial Filter"
+    ],
+    "color": "White"
+  },
+  {
+    "id": 4,
+    "name": "Samsung WindFree™* 3.0e",
+    "type": "Split",
+    "image": "/assets/other-prod/samsung-split-2.png",
+    "price": 399.99,
+    "rating": 4.5,
+    "review_count": 1987,
+    "description": "Enjoy cool comfort with the Samsung WindFree™* 3.0e Split Air Conditioner, featuring innovative WindFree™* cooling technology that disperses air gently and evenly without the discomfort of direct cold airflow. Ideal for medium-sized rooms.",
+    "brand": "Samsung",
+    "tonnage": "1 Ton",
+    "consumption": 1800,
+    "features": [
+      "WindFree™* Cooling Technology",
+      "Digital Inverter Boost",
+      "Triple Protector Plus",
+      "SmartThings App Control"
+    ],
+    "color": "White"
+  },
+  {
+    "id": 5,
+    "name": "LG 12,000 BTU Smart Wi-Fi Enabled Window Air Conditioner",
+    "type": "Window",
+    "image": "/assets/12000-BTU-Smart-Wi-Fi-Enabled-WIndow-Air-Conditioner/12000-BTU-Smart-Wi-Fi-Enabled-WIndow-Air-Conditioner-1.png",
+    "price": 499.99,
+    "rating": 4.8,
+    "review_count": 3124,
+    "description": "Keep your space cool and connected with the LG 12,000 BTU Smart Wi-Fi Enabled Window Air Conditioner. Perfect for rooms up to 550 square feet, this unit offers powerful cooling and smart features accessible via your smartphone.",
+    "brand": "LG",
+    "tonnage": "2.5",
+    "consumption": 2400,
+    "features": [
+      "SmartThinQ® Technology",
+      "Energy Saver Mode",
+      "24-Hour On/Off Timer",
+      "Low Noise Performance",
+      "Wi-Fi Enabled"
+    ],
+    "color": "White"
+  },
+  {
+    "id": 6,
+    "name": "LG 10,000 BTU Smart Wi-Fi Enabled Window Air Conditioner",
+    "type": "Window",
+    "image": "/assets/8000-BTU-SMART-Wi-Fi-Enabled-Window-Air-Conditioner/8000-BTU-SMART-Wi-Fi-Enabled-Window-Air-Conditioner-4.png",
+    "price": 599.99,
+    "rating": 4.9,
+    "review_count": 2567,
+    "description": "Experience advanced cooling with the LG 10,000 BTU Smart Wi-Fi Enabled Window Air Conditioner, perfect for spaces up to 450 square feet. Control your comfort with smart features and energy-efficient operation.",
+    "brand": "LG",
+    "tonnage": "2 Tons",
+    "consumption": 2300,
+    "features": [
+      "SmartThinQ® Technology",
+      "Energy Saver Mode",
+      "24-Hour On/Off Timer",
+      "Dual Inverter Compressor",
+      "Wi-Fi Enabled"
+    ],
+    "color": "White"
+  },
+  {
+    "id": 7,
+    "name": "Samsung Max Heat® 3.0",
+    "type": "Split",
+    "image": "/assets/other-prod/samsung-split-5.png",
+    "price": 599.99,
+    "rating": 5,
+    "review_count": 1823,
+    "description": "The Samsung Max Heat® 3.0 Split Air Conditioner provides powerful cooling and heating, making it ideal for year-round comfort. Perfect for medium to large spaces, it features advanced technology for energy efficiency and superior performance.",
+    "brand": "Samsung",
+    "tonnage": "5 Tons",
+    "consumption": 2200,
+    "features": [
+      "Max Heat® Technology",
+      "Digital Inverter Boost",
+      "Triple Protector Plus",
+      "SmartThings App Control",
+      "WindFree™* Cooling Technology"
+    ],
+    "color": "White"
+  },
+  {
+    "id": 8,
+    "name": "Samsung WindFree™* 3.0i",
+    "type": "Split",
+    "image": "/assets/other-prod/samsung-split-8.png",
+    "price": 799.99,
+    "rating": 4,
+    "review_count": 2456,
+    "description": "The Samsung WindFree™* 3.0i Split Air Conditioner offers premium cooling performance with WindFree™* technology, which disperses air gently and evenly. Ideal for larger rooms, it ensures comfort without the draft of direct airflow.",
+    "brand": "Samsung",
+    "tonnage": "2.5 Tons",
+    "consumption": 2600,
+    "features": [
+      "WindFree™* Cooling Technology",
+      "Digital Inverter Boost",
+      "SmartThings App Control",
+      "Triple Protector Plus",
+      "Auto Clean Function"
+    ],
+    "color": "White"
+  },
+  {
+    "id": 9,
+    "name": "Samsung Hylex™",
+    "type": "Split",
+    "image": "/assets/other-prod/samsung-split-7.png",
+    "price": 899.99,
+    "rating": 3,
+    "review_count": 3120,
+    "description": "The Samsung Hylex™ Split Air Conditioner delivers exceptional cooling performance with cutting-edge technology. Designed for larger spaces, it offers powerful cooling with advanced features to enhance comfort and efficiency.",
+    "brand": "Samsung",
+    "tonnage": "2.5 Tons",
+    "consumption": 2800,
+    "features": [
+      "Advanced Inverter Technology",
+      "WindFree™* Cooling",
+      "SmartThings App Integration",
+      "Triple Protector Plus",
+      "Eco Mode"
+    ],
+    "color": "White"
+  },
+  {
+    "id": 10,
+    "name": "Samsung Max 36k",
+    "type": "Split",
+    "image": "/assets/other-prod/samsung-split-4.png",
+    "price": 999.99,
+    "rating": 5,
+    "review_count": 1984,
+    "description": "The Samsung Max 36k Split Air Conditioner offers high-performance cooling for large spaces. With advanced technology and energy-efficient features, it ensures optimal comfort and efficiency for both residential and commercial applications.",
+    "brand": "Samsung",
+    "tonnage": "5 Tons",
+    "consumption": 3200,
+    "features": [
+      "High-Capacity Cooling",
+      "Digital Inverter Technology",
+      "SmartThings App Control",
+      "Eco Mode",
+      "Quiet Operation"
+    ],
+    "color": "White"
+  },
+  {
+    "id": 11,
+    "name": "LG LAN090 9K BTU Multi Zone Inverter Heat Pump Art Cool",
+    "type": "Split",
+    "image": "/assets/other-prod/LG-LAN090-9K-BTU-Multi-Zone-Inverter-Heat-Pump-Art-Cool.png",
+    "price": 999.99,
+    "rating": 5,
+    "review_count": 1784,
+    "description": "The LG LAN090 9K BTU Multi Zone Inverter Heat Pump Art Cool is designed for stylish and efficient cooling and heating in multiple zones. With its sleek design and powerful performance, it's perfect for modern homes looking for both aesthetics and functionality.",
+    "brand": "LG",
+    "tonnage": "2.5 Tons",
+    "consumption": 1500,
+    "features": [
+      "Art Cool Design",
+      "Inverter Technology",
+      "Multi-Zone Capability",
+      "Energy Efficient",
+      "Low Noise Operation"
+    ],
+    "color": "Black"
+  },
+  {
+    "id": 12,
+    "name": "Rheem RA15AZ Endeavor Line Classic Plus Series Air Conditioner",
+    "type": "Standing",
+    "image": "/assets/other-prod/ra15az-endeavor-line-classic-plus-series-air-conditioner.png",
+    "price": 769.99,
+    "rating": 4,
+    "review_count": 2134,
+    "description": "The Rheem RA15AZ Endeavor Line Classic Plus Series Air Conditioner offers reliable and efficient cooling for large spaces. With its robust design and advanced features, it ensures consistent performance and comfort during hot weather.",
+    "brand": "Rheem",
+    "tonnage": "2.5 Tons",
+    "consumption": 3000,
+    "features": [
+      "Classic Plus Series",
+      "Scroll Compressor",
+      "Efficient Cooling",
+      "Durable Cabinet",
+      "Quiet Operation"
+    ],
+    "color": "Grey"
+  },
+  {
+    "id": 13,
+    "name": "Rheem RA16AZ Endeavor Line Classic Plus Series Air Conditioner",
+    "type": "Split",
+    "image": "/assets/other-prod/ra16az-endeavor-line-classic-plus-series-air-conditioner.png",
+    "price": 385.99,
+    "rating": 4,
+    "review_count": 1678,
+    "description": "The Rheem RA16AZ Endeavor Line Classic Plus Series Air Conditioner provides efficient and reliable cooling for medium to large spaces. Its advanced technology and durable construction make it a perfect choice for comfortable living.",
+    "brand": "Rheem",
+    "tonnage": "1.5 Tons",
+    "consumption": 2500,
+    "features": [
+      "Classic Plus Series",
+      "Scroll Compressor",
+      "Energy Efficient",
+      "Quiet Operation",
+      "Durable Cabinet"
+    ],
+    "color": "Grey"
+  },
+  {
+    "id": 14,
+    "name": "Rheem RA18AZ Endeavor Line Prestige Series Air Conditioner",
+    "type": "Split",
+    "image": "/assets/other-prod/ra18az-endeavor-line-prestige-series-air-conditioner.png",
+    "price": 385.99,
+    "rating": 4.5,
+    "review_count": 1895,
+    "description": "The Rheem RA18AZ Endeavor Line Prestige Series Air Conditioner offers top-tier cooling performance with advanced features for enhanced comfort and efficiency. Ideal for medium to large spaces, it delivers reliable and energy-efficient cooling.",
+    "brand": "Rheem",
+    "tonnage": "2.5 Tons",
+    "consumption": 2450,
+    "features": [
+      "Prestige Series",
+      "Scroll Compressor",
+      "Energy Efficient",
+      "Quiet Operation",
+      "Durable Cabinet"
+    ],
+    "color": "Grey"
+  }
 ]
