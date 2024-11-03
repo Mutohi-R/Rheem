@@ -26,7 +26,8 @@ const Home = () => {
                 </h1>
                 <div className="hero-image">
                   <img
-                    src="src/assets/hero-img.jpg"
+                    src="/assets/hero-img.jpg"
+                    // src="/assets/hero-img.jpg"
                     alt="a modern kitchen with air conditioning"
                   />
                 </div>
@@ -130,10 +131,7 @@ const Home = () => {
           <div className="wrapper">
             <div className="about-us-container">
               <div className="about-us-image">
-                <img
-                  src="src/assets/pexels-rickyrecap-1666667%20(1).jpg"
-                  alt=""
-                />
+                <img src="/assets/pexels-rickyrecap-1666667%20(1).jpg" alt="" />
               </div>
               <div className="about-us-content | grid gap-3">
                 <h2>Get to Know us</h2>
